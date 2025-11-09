@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie JJ | AI-Driven Quality & Safety Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --gold-dark: #B8941E;
+            --blue: #5A7FA8;
+            --black: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --med-gray: #2a2a2a;
+            --light-gray: #999999;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --border: #333333;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', -apple-system, 
+BlinkMacSystemFont, sans-serif;
+            background: var(--black);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Subtle Grid Background */
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(212, 175, 55, 0.02) 1px, transparent 
+1px),
+                linear-gradient(90deg, rgba(212, 175, 55, 0.02) 1px, 
+transparent 1px);
+            background-size: 60px 60px;
+            z-index: -1;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        nav {
+            display: flex;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            letter-spacing: 0.3px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 5% 4rem;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .hero-tagline {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-description {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 4rem auto 3rem;
+            max-width: 900px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--dark-gray);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat-item:hover {
+            border-color: var(--gold);
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.2rem;
+            color: var(--blue);
+            font-weight: 300;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+            border: 3px solid;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--black);
+            border-color: var(--gold);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            border-color: var(--gold-dark);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border-color: var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        /* Company Badge */
+        .company-badge {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: var(--dark-gray);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .company-badge strong {
+            color: var(--gold);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--dark-gray);
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--gold);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--blue);
+            flex-shrink: 0;
+        }
+
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-tagline {
+            font-size: 0.95rem;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-deliverables {
+            margin-top: 1.5rem;
+        }
+
+        .deliverables-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .service-deliverables ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-deliverables li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-deliverables li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* Section CTA */
+        .section-cta {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+
+            nav {
+                gap: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 5%;
+            }
+
+            nav {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 5rem 5% 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .section {
+                padding: 4rem 5%;
+            }
+
+            .service-card {
+                padding: 2rem;
+            }
+
+            .service-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection color */
+        ::selection {
+            background: var(--gold);
+            color: var(--black);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <header>
+        <div class="logo">WBSE <span>|</span> Stephanie JJ</div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="company-badge">
+                <strong>WBSE</strong> • We Bring Support & Expertise
+            </div>
+            
+            <h1>AI-Driven Quality & Safety Engineer</h1>
+            
+            <p class="hero-tagline">Enterprise-Grade Automation & CRM 
+Intelligence</p>
+            
+            <p class="hero-description">
+                At WBSE (We Bring Support & Expertise), I engineer 
+intelligent automation solutions that enhance quality, safety, and 
+operational efficiency. Specializing in CRM and API analysis using AI, and 
+enterprise-grade automation workflows using Python.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">▲</div>
+                    <div class="stat-label">AI-Powered<br>Solutions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">◆</div>
+                    <div class="stat-label">CRM & 
+API<br>Integrations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">●</div>
+                    <div class="stat-label">Python<br>Automations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">■</div>
+                    <div class="stat-label">Data-Driven<br>Analysis</div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Explore 
+Services</a>
+                <a href="#contact" class="btn btn-secondary">Get In 
+Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Services & Expertise</h2>
+            <p class="section-subtitle">
+                Comprehensive solutions for enterprise automation, CRM 
+intelligence, and AI-driven quality systems
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">◆</div>
+                    <div>
+                        <h3 class="service-title">CRM Intelligence & 
+Integration</h3>
+                        <p class="service-tagline">Strategic HubSpot 
+implementation and optimization for enterprise-grade operations</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    Comprehensive CRM setup, API integration, and workflow 
+automation. I design and deploy intelligent systems that connect your 
+HubSpot CRM with existing business tools, ensuring seamless data flow and 
+enhanced customer relationship management.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>HubSpot configuration & customization</li>
+                        <li>API integration with third-party systems</li>
+                        <li>Automated workflow design</li>
+                        <li>Data migration & synchronization</li>
+                        <li>Custom reporting dashboards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">▲</div>
+                    <div>
+                        <h3 class="service-title">AI-Powered API 
+Analysis</h3>
+                        <p class="service-tagline">Intelligent analysis 
+and optimization of API ecosystems using artificial intelligence</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    Advanced API performance monitoring, data flow 
+analysis, and predictive maintenance using AI-driven tools. I identify 
+bottlenecks, optimize integration points, and ensure your API 
+infrastructure operates at peak efficiency.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>API performance audits</li>
+                        <li>AI-driven anomaly detection</li>
+                        <li>Integration optimization</li>
+                        <li>Security & compliance analysis</li>
+                        <li>Real-time monitoring solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">●</div>
+                    <div>
+                        <h3 class="service-title">Enterprise Automation 
+Engineering</h3>
+                        <p class="service-tagline">Python-based automation 
+solutions that transform business operations</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    End-to-end automation development using Python to 
+eliminate manual processes, reduce errors, and accelerate workflows. From 
+data processing to complex multi-system orchestration, I build scalable 
+automation that drives measurable ROI.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>Custom Python automation scripts</li>
+                        <li>Process workflow optimization</li>
+                        <li>Multi-system integration</li>
+                        <li>Scheduled task automation</li>
+                        <li>Error handling & monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">■</div>
+                    <div>
+                        <h3 class="service-title">Quality & Safety 
+Systems</h3>
+                        <p class="service-tagline">AI-enhanced quality 
+assurance and safety compliance frameworks</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    Implementation of intelligent quality control systems 
+and safety protocols powered by AI analysis. I develop frameworks that 
+continuously monitor, analyze, and improve quality metrics while ensuring 
+regulatory compliance.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>Quality management system setup</li>
+                        <li>Safety compliance auditing</li>
+                        <li>AI-driven risk assessment</li>
+                        <li>Automated reporting & alerts</li>
+                        <li>Continuous improvement protocols</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">◆</div>
+                    <div>
+                        <h3 class="service-title">Data Analytics & 
+Insights</h3>
+                        <p class="service-tagline">Transform raw data into 
+actionable business intelligence</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    Advanced data analysis, visualization, and reporting 
+solutions that provide clear insights for strategic decision-making. I 
+build custom analytics pipelines that process, analyze, and present data 
+in meaningful ways.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>Custom analytics dashboards</li>
+                        <li>Automated data pipelines</li>
+                        <li>Predictive analytics models</li>
+                        <li>KPI tracking & reporting</li>
+                        <li>Data visualization solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">▲</div>
+                    <div>
+                        <h3 class="service-title">Technical Consulting & 
+Support</h3>
+                        <p class="service-tagline">Expert guidance for 
+digital transformation and automation strategy</p>
+                    </div>
+                </div>
+                <p class="service-description">
+                    Strategic consulting services to assess current 
+systems, identify automation opportunities, and develop comprehensive 
+implementation roadmaps. Ongoing support to ensure long-term success of 
+deployed solutions.
+                </p>
+                <div class="service-deliverables">
+                    <p class="deliverables-title">KEY DELIVERABLES</p>
+                    <ul>
+                        <li>Technology assessment & audit</li>
+                        <li>Automation strategy development</li>
+                        <li>Implementation planning</li>
+                        <li>Training & documentation</li>
+                        <li>Ongoing technical support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-cta">
+            <a href="#contact" class="btn btn-primary">Discuss Your 
+Project</a>
+        </div>
+    </section>
+</body>
+</html>
+
