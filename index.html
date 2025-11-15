@@ -3,712 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephanie JJ | CRM Data Quality Auditor & API Security Specialist</title>
+    <title>Stephanie JJ | CRM Data Quality & API Security Specialist</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
-            --gold: #D4AF37;
-            --gold-dark: #B8941E;
-            --blue: #5A7FA8;
-            --black: #0a0a0a;
-            --dark-gray: #1a1a1a;
-            --med-gray: #2a2a2a;
-            --light-gray: #999999;
-            --text-primary: #e0e0e0;
-            --text-secondary: #b0b0b0;
-            --border: #333333;
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --gold: #d4af37;
+            --border: #333;
         }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--black);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
-            overflow-x: hidden;
         }
-
-        /* Subtle Grid Background */
-        .grid-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(212, 175, 55, 0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
-            background-size: 60px 60px;
-            z-index: -1;
-        }
-
-        /* Header */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 1.5rem 5%;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000;
         }
-
         .logo {
-            font-size: 1.2rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .logo span {
+            font-size: 1.5rem;
+            font-weight: 700;
             color: var(--gold);
         }
-
-        nav {
+        nav ul {
             display: flex;
-            gap: 3rem;
+            gap: 2rem;
+            list-style: none;
         }
-
         nav a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            letter-spacing: 0.3px;
+            transition: color 0.3s;
         }
-
-        nav a:hover,
-        nav a.active {
-            color: var(--gold);
-        }
-
-        /* Hero Section */
+        nav a:hover { color: var(--gold); }
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 6rem 5% 4rem;
-        }
-
-        .hero-content {
-            max-width: 900px;
+            padding: 6rem 0;
             text-align: center;
         }
-
         .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            color: var(--text-primary);
-            line-height: 1.2;
-        }
-
-        .hero-tagline {
-            font-size: 1.3rem;
-            color: var(--gold);
-            margin-bottom: 2.5rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-
-        .hero-description {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 750px;
-            margin: 0 auto 3rem;
-        }
-
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin: 4rem auto 3rem;
-            max-width: 900px;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: var(--dark-gray);
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            transition: border-color 0.2s ease;
-        }
-
-        .stat-item:hover {
-            border-color: var(--gold);
-        }
-
-        .stat-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.2rem;
-            color: var(--blue);
-            font-weight: 300;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
-
-        /* CTA Buttons */
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            letter-spacing: 0.5px;
-            border: 3px solid;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: var(--gold);
-            color: var(--black);
-            border-color: var(--gold);
-        }
-
-        .btn-primary:hover {
-            background: var(--gold-dark);
-            border-color: var(--gold-dark);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-primary);
-            border-color: var(--border);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-        }
-
-        /* Company Badge */
-        .company-badge {
-            display: inline-block;
-            padding: 0.5rem 1.2rem;
-            background: var(--dark-gray);
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            letter-spacing: 1px;
-        }
-
-        .company-badge strong {
-            color: var(--gold);
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 6rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 600;
+            font-size: 3rem;
             margin-bottom: 1rem;
-            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--gold), #f4d03f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        .section-subtitle {
-            font-size: 1.1rem;
+        .hero p {
+            font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
+            margin: 0 auto 2rem;
         }
-
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 4rem;
-        }
-
-        .service-card {
-            background: var(--dark-gray);
-            border: 1px solid var(--border);
-            padding: 2.5rem;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-4px);
-        }
-
-        .service-header {
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--blue);
-            font-weight: 300;
-            flex-shrink: 0;
-        }
-
-        .service-title {
-            font-size: 1.4rem;
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
             font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
+            transition: all 0.3s;
         }
-
-        .service-tagline {
-            font-size: 0.95rem;
-            color: var(--gold);
-            font-weight: 500;
-            margin-bottom: 1rem;
+        .btn-primary {
+            background: var(--gold);
+            color: var(--bg-primary);
         }
-
-        .service-description {
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 2rem;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
         }
-
-        .service-deliverables {
-            border-top: 1px solid var(--border);
-            padding-top: 1.5rem;
-        }
-
-        .deliverables-title {
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            color: var(--light-gray);
-            margin-bottom: 1rem;
-        }
-
-        .service-deliverables ul {
-            list-style: none;
-        }
-
-        .service-deliverables li {
-            color: var(--text-secondary);
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            font-size: 0.95rem;
-        }
-
-        .service-deliverables li::before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: var(--gold);
-        }
-
-        .section-cta {
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .about-intro {
-            font-size: 1.3rem;
-            color: var(--gold);
-            font-weight: 500;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .about-text {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .about-philosophy {
-            background: var(--dark-gray);
-            border-left: 4px solid var(--gold);
-            padding: 2rem;
-            margin: 3rem 0;
-            font-style: italic;
-            color: var(--text-primary);
-            font-size: 1.1rem;
-        }
-
-        .about-commitments {
-            margin: 3rem 0;
-        }
-
-        .about-commitments h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--gold);
-        }
-
-        .about-commitments ul {
-            list-style: none;
-        }
-
-        .about-commitments li {
-            padding: 0.8rem 0;
-            padding-left: 2rem;
-            position: relative;
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-        }
-
-        .about-commitments li::before {
-            position: absolute;
-            left: 0;
-            color: var(--gold);
-            font-size: 1.2rem;
-        }
-
-        .about-languages {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: var(--dark-gray);
-            border: 1px solid var(--border);
-            border-radius: 2px;
-        }
-
-        .about-languages strong {
-            color: var(--gold);
-        }
-
-        .about-quote {
-            text-align: center;
-            font-size: 1.3rem;
-            color: var(--gold);
-            font-style: italic;
-            margin-top: 3rem;
-            padding: 2rem;
-            border-top: 1px solid var(--border);
+        .section {
+            padding: 5rem 0;
             border-bottom: 1px solid var(--border);
         }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                gap: 1.5rem;
-                font-size: 0.85rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: stretch;
-            }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .article-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        .article-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        .article-card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .article-card h3 a:hover {
+            color: var(--gold);
+        }
+        .article-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .article-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="grid-background"></div>
-
     <header>
-        <div class="logo">
-            STEPHANIE <span>JJ</span>
-        </div>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#articles">Articles</a>
-            <a href="mailto:wbse.consult@gmail.com">Contact</a>
+        <nav class="container">
+            <div class="logo">WBSE</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="mailto:wbse.consult@gmail.com">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="company-badge">
-                <strong>WBSE</strong> • We Bring Support & Expertise
-            </div>
-            
-            <h1>CRM Data Quality Auditor & API Security Specialist</h1>
-            
-            <p class="hero-tagline">AI-Driven CRM Intelligence & Enterprise Automation</p>
-            
-            <p class="hero-description">
-                At WBSE (We Bring Support & Expertise), I transform messy CRM data into reliable business intelligence. Specializing in AI-driven CRM audits, API security analysis, and enterprise automation solutions that deliver measurable ROI.
-            </p>
-
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">▲</div>
-                    <div class="stat-label">AI-Powered<br>Solutions</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">◆</div>
-                    <div class="stat-label">CRM & API<br>Security</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">●</div>
-                    <div class="stat-label">Python<br>Automations</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">■</div>
-                    <div class="stat-label">Data-Driven<br>Intelligence</div>
-                </div>
-            </div>
-
-            <div class="cta-buttons">
-                <a href="#services" class="btn btn-primary">Explore Services</a>
-                <a href="mailto:wbse.consult@gmail.com" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
+    <section class="hero container">
+        <h1>Stephanie Jupiter Jacca</h1>
+        <p>CRM Data Quality Auditor & API Security Specialist | Transforming messy data into strategic insights through AI-driven automation</p>
+        <a href="mailto:wbse.consult@gmail.com" class="btn btn-primary">Let's Talk</a>
     </section>
 
-    <section id="services" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Services & Expertise</h2>
-            <p class="section-subtitle">
-                AI-driven solutions for CRM optimization, API security, and enterprise automation
-            </p>
-        </div>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon">◆</div>
-                    <div>
-                        <h3 class="service-title">AI-Driven CRM Quality Audit</h3>
-                        <p class="service-tagline">Transform messy CRM data into strategic business intelligence</p>
-                    </div>
-                </div>
-                <p class="service-description">
-                    Comprehensive CRM data quality audits using AI and Python. Identify duplicates, incomplete data, revenue leakage, and churn risks. Automated analysis of 500K+ records with 98% accuracy, delivering actionable insights and ROI-focused recommendations.
-                </p>
-                <div class="service-deliverables">
-                    <p class="deliverables-title">KEY DELIVERABLES</p>
-                    <ul>
-                        <li>Data quality audit & scoring (0-100)</li>
-                        <li>Duplicate detection (exact + fuzzy matching)</li>
-                        <li>Revenue leakage identification</li>
-                        <li>Churn prediction models (85%+ accuracy)</li>
-                        <li>Automated cleanup & enrichment</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon">▲</div>
-                    <div>
-                        <h3 class="service-title">AI-Driven API Safety & Analysis</h3>
-                        <p class="service-tagline">Intelligent security audits and compliance for your API ecosystem</p>
-                    </div>
-                </div>
-                <p class="service-description">
-                    Advanced API security audits powered by AI. Secret scanning, endpoint security assessment, and compliance verification (GDPR, ISO 27001, SOC 2). Detect exposed credentials, vulnerabilities, and security gaps before they become threats.
-                </p>
-                <div class="service-deliverables">
-                    <p class="deliverables-title">KEY DELIVERABLES</p>
-                    <ul>
-                        <li>API security audit & risk assessment</li>
-                        <li>Secret scanning (exposed keys, tokens)</li>
-                        <li>Authentication & authorization review</li>
-                        <li>Compliance checks (GDPR, ISO 27001, SOC 2)</li>
-                        <li>Security audit reports for due diligence</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon">●</div>
-                    <div>
-                        <h3 class="service-title">Enterprise Automation Engineering</h3>
-                        <p class="service-tagline">Python-based automation solutions that transform business operations</p>
-                    </div>
-                </div>
-                <p class="service-description">
-                    End-to-end automation development using Python to eliminate manual processes, reduce errors, and accelerate workflows. From data processing to complex multi-system orchestration, scalable automation that drives measurable ROI.
-                </p>
-                <div class="service-deliverables">
-                    <p class="deliverables-title">KEY DELIVERABLES</p>
-                    <ul>
-                        <li>Custom Python automation scripts</li>
-                        <li>Process workflow optimization</li>
-                        <li>Multi-system integration & ETL</li>
-                        <li>Scheduled task automation</li>
-                        <li>Error handling & monitoring dashboards</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon">■</div>
-                    <div>
-                        <h3 class="service-title">Quality & Safety Systems</h3>
-                        <p class="service-tagline">AI-enhanced quality assurance and safety compliance frameworks</p>
-                    </div>
-                </div>
-                <p class="service-description">
-                    Implementation of intelligent quality control systems and safety protocols powered by AI analysis. Frameworks that continuously monitor, analyze, and improve quality metrics while ensuring regulatory compliance.
-                </p>
-                <div class="service-deliverables">
-                    <p class="deliverables-title">KEY DELIVERABLES</p>
-                    <ul>
-                        <li>Quality management system setup</li>
-                        <li>Safety compliance auditing</li>
-                        <li>AI-driven risk assessment</li>
-                        <li>Automated reporting & alerts</li>
-                        <li>Continuous improvement protocols</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon">◆</div>
-                    <div>
-                        <h3 class="service-title">Data Analytics & Insights</h3>
-                        <p class="service-tagline">Transform raw data into actionable business intelligence</p>
-                    </div>
-                </div>
-                <p class="service-description">
-                    Advanced data analysis, visualization, and reporting solutions that provide clear insights for strategic decision-making. Custom analytics pipelines using Python, Plotly, and Streamlit that process, analyze, and present data in meaningful ways.
-                </p>
-                <div class="service-deliverables">
-                    <p class="deliverables-title">KEY DELIVERABLES</p>
-                    <ul>
-                        <li>Custom analytics dashboards (Streamlit)</li>
-                        <li>Automated data pipelines (Python)</li>
-                        <li>Predictive analytics models (ML)</li>
-                        <li>KPI tracking & reporting</li>
-                        <li>Interactive data visualizations (Plotly)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-cta">
-            <a href="mailto:wbse.consult@gmail.com" class="btn btn-primary">Discuss Your Project</a>
-        </div>
+    <section id="about" class="section container">
+        <h2>About</h2>
+        <p>I specialize in CRM data quality audits, API security analysis, and enterprise automation solutions. With expertise in HubSpot ecosystems, Python development, and predictive analytics, I help businesses prevent churn, identify revenue leaks, and build reliable data foundations for strategic growth.</p>
     </section>
 
-    <section id="about" class="section">
-        <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-        </div>
-
-        <div class="about-content">
-            <p class="about-intro">Data Strategist & CRM Optimization Consultant</p>
-            
-            <p class="about-text">
-                <strong>From Air Logistics to Data Intelligence</strong><br><br>
-                French, globetrotter, and self-taught, I built my career in the demanding environments of air transport and logistics. This experience taught me a fundamental truth: data accuracy determines operational success.
-            </p>
-
-            <p class="about-text">
-                My thirst for learning and insatiable curiosity led me to discover data science through AI, where I realized that data is much more than just numbers - it's a complete mapping of the past, a key to understanding the present, and a compass for anticipating the future.
-            </p>
-
-            <div class="about-philosophy">
-                "Raw data in untrained hands has limited value. But when articulated with strategic vision and technical expertise, it becomes the engine of business transformation."
-            </div>
-
-            <div class="about-commitments">
-                <h3>My Commitments</h3>
-                <ul>
-                    <li>🔍 CRM Audit: Identifying gaps and optimizing processes</li>
-                    <li>📊 Data Analytics: Transforming data into actionable insights</li>
-                    <li>🛡️ Ethics & Compliance: Placing user protection at the heart of data strategy</li>
-                    <li>🎯 Churn Prevention: Using predictive analytics to enhance customer loyalty</li>
-                </ul>
-            </div>
-
-            <div class="about-languages">
-                <strong>Languages:</strong> French (native), English (fluent), Arabic (learning)
-            </div>
-
-            <p class="about-text">
-                I firmly believe the future belongs to companies that can successfully blend technology, ethics, and strategic vision. My goal: to help you transform your data into gold while maintaining customer integrity and trust.
-            </p>
-
-            <div class="about-quote">
-                "Data is gold - but only a skilled artisan can reveal its true brilliance."
-            </div>
-        </div>
+    <section id="articles" class="section container">
+        <h2>Articles</h2>
+        <p>Technical insights and thought leadership on CRM data quality, API security, and automation</p>
+        
+        <div class="articles-grid" id="articles-container"></div>
     </section>
 
-    <section id="articles" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Articles</h2>
-            <p class="section-subtitle">
-                Technical insights and thought leadership on CRM data quality, API security, and automation
-            </p>
-        </div>
-
-        <div class="about-content">
-            <p class="about-text" style="text-align: center; color: var(--text-secondary);">
-                Articles coming soon. Stay tuned for in-depth analysis on CRM audit methodologies, API security best practices, and data-driven business intelligence.
-            </p>
-        </div>
-
-        <div class="section-cta">
-            <a href="mailto:wbse.consult@gmail.com" class="btn btn-secondary">Get Notified</a>
-        </div>
-    </section>
-
-    <footer style="text-align: center; padding: 3rem 5%; border-top: 1px solid var(--border); color: var(--text-secondary);">
+    <footer>
         <p>&copy; 2025 Stephanie JJ | WBSE - We Bring Support & Expertise</p>
         <p style="margin-top: 1rem;">
-            <a href="mailto:wbse.consult@gmail.com" style="color: var(--gold); text-decoration: none;">wbse.consult@gmail.com</a> | 
-            <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank" style="color: var(--gold); text-decoration: none;">LinkedIn</a> | 
-            <a href="https://github.com/stephaniejj" target="_blank" style="color: var(--gold); text-decoration: none;">GitHub</a>
+            <a href="mailto:wbse.consult@gmail.com">wbse.consult@gmail.com</a> | 
+            <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/stephaniejj" target="_blank">GitHub</a>
         </p>
     </footer>
+
+    <script>
+        const posts = [
+            {
+                title: "Messy CRM Cleanup — Why Your CRM Gets Out of Control",
+                link: "/2024/11/10/messy-crm-cleanup.html",
+                date: "10 Novembre 2024",
+                excerpt: "A poorly maintained CRM can be costly for your business. Between duplicates, incomplete information, and misconfigured integrations, data quality deteriorates rapidly."
+            },
+            {
+                title: "Churn Prevention: Understanding and Reducing Customer Attrition",
+                link: "/crm/2025/11/09/churn-prevention-understanding-and-reducing-customer-attrition.html",
+                date: "9 Novembre 2025",
+                excerpt: "Découvrez comment anticiper et réduire le churn dans les entreprises B2B SaaS grâce à des modèles prédictifs et des audits CRM."
+            }
+        ];
+
+        const container = document.getElementById("articles-container");
+
+        posts.forEach(post => {
+            const article = document.createElement("div");
+            article.className = "article-card";
+            article.innerHTML = `
+                <h3><a href="${post.link}">${post.title}</a></h3>
+                <p>${post.excerpt}</p>
+                <small class="article-date">Publié le ${post.date}</small>
+            `;
+            container.appendChild(article);
+        });
+    </script>
 </body>
 </html>
