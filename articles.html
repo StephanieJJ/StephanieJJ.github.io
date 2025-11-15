@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles — Stephanie JJ</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        h1 { color: #333; }
+        article { margin-bottom: 30px; }
+        a { text-decoration: none; color: #0066cc; }
+        a:hover { text-decoration: underline; }
+        small { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Articles</h1>
+    <div id="articles"></div>
+
+    <script>
+        const posts = [
+            {
+                title: "Messy CRM Cleanup — Why Your CRM Gets Out of Control",
+                link: "_posts/2025-11-10-messy-crm-cleanup.md",
+                date: "10 Novembre 2025",
+                excerpt: "A poorly maintained CRM can be costly for your business. Between duplicates, incomplete information, and misconfigured integrations, data quality deteriorates rapidly."
+            },
+            {
+                title: "Churn Prevention: Understanding and Reducing Customer Attrition",
+                link: "_posts/2025-11-09-churn-prevention-understanding-and-reducing-customer-attrition.md",
+                date: "9 Novembre 2025",
+                excerpt: "Découvrez comment anticiper et réduire le churn dans les entreprises B2B SaaS grâce à des modèles prédictifs et des audits CRM."
+            }
+        ];
+
+        const container = document.getElementById("articles");
+
+        posts.forEach(post => {
+            const article = document.createElement("article");
+            article.innerHTML = `
+                <h2><a href="${post.link}">${post.title}</a></h2>
+                <p>${post.excerpt}</p>
+                <small>Publié le ${post.date}</small>
+            `;
+            container.appendChild(article);
+        });
+    </script>
+</body>
+</html>
