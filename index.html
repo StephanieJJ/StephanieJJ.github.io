@@ -12,46 +12,56 @@
         }
 
         :root {
-            --gold: #D4AF37;
-            --gold-dark: #B8941E;
-            --blue: #5A7FA8;
-            --dark-bg: #0a0a0a;
-            --card-bg: #1a1a1a;
+            --cyan: #00D9FF;
+            --cyan-dark: #00B8D4;
+            --gold: #FFD700;
+            --gold-dark: #D4AF37;
+            --dark-bg: #000000;
+            --card-bg: #0a0a0a;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
-            --border: #333;
+            --border: #1a1a1a;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: var(--dark-bg);
             color: var(--text-primary);
             line-height: 1.6;
         }
 
         .navbar {
-            background: rgba(10, 10, 10, 0.95);
+            background: rgba(0, 0, 0, 0.98);
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 1000;
             border-bottom: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.1);
         }
 
         .nav-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1.5rem 5%;
+            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-decoration: none;
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
         }
 
         .nav-links {
@@ -64,26 +74,63 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--gold));
+            transition: width 0.3s;
         }
 
         .nav-links a:hover {
-            color: var(--gold);
+            color: var(--cyan);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
         }
 
         .hero {
             padding: 8rem 5% 6rem;
             text-align: center;
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+            background: radial-gradient(ellipse at top, rgba(0, 217, 255, 0.08) 0%, transparent 60%);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.03) 50%, transparent 100%),
+                linear-gradient(0deg, transparent 0%, rgba(255, 215, 0, 0.03) 50%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--gold), #f4d03f);
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--gold) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: 800;
+            text-shadow: 0 0 40px rgba(0, 217, 255, 0.3);
         }
 
         .hero-subtitle {
@@ -109,28 +156,31 @@
             font-size: 1rem;
             transition: all 0.3s;
             display: inline-block;
+            position: relative;
+            overflow: hidden;
         }
 
         .btn-primary {
-            background: var(--gold);
+            background: linear-gradient(135deg, var(--cyan), var(--gold));
             color: var(--dark-bg);
+            border: none;
         }
 
         .btn-primary:hover {
-            background: var(--gold-dark);
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.4);
         }
 
         .btn-secondary {
-            border: 2px solid var(--gold);
-            color: var(--gold);
+            border: 2px solid var(--cyan);
+            color: var(--cyan);
             background: transparent;
         }
 
         .btn-secondary:hover {
-            background: var(--gold);
+            background: var(--cyan);
             color: var(--dark-bg);
+            box-shadow: 0 5px 20px rgba(0, 217, 255, 0.3);
         }
 
         .section {
@@ -146,7 +196,10 @@
 
         .section-title {
             font-size: 2.5rem;
-            color: var(--gold);
+            background: linear-gradient(135deg, var(--cyan), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 1rem;
             font-weight: 700;
         }
@@ -171,12 +224,30 @@
             border-radius: 12px;
             border: 1px solid var(--border);
             transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--cyan), var(--gold));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            border-color: var(--gold);
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+            border-color: var(--cyan);
+            box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
         }
 
         .service-icon {
@@ -215,9 +286,10 @@
         }
 
         .tech-badge:hover {
-            border-color: var(--gold);
-            color: var(--gold);
+            border-color: var(--cyan);
+            color: var(--cyan);
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.2);
         }
 
         .about-content {
@@ -237,9 +309,9 @@
         }
 
         .about-philosophy {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(90, 127, 168, 0.1));
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(255, 215, 0, 0.05));
             padding: 2rem;
-            border-left: 4px solid var(--gold);
+            border-left: 4px solid var(--cyan);
             margin: 2.5rem 0;
             font-style: italic;
             color: var(--text-primary);
@@ -251,7 +323,10 @@
         }
 
         .about-commitments h3 {
-            color: var(--gold);
+            background: linear-gradient(135deg, var(--cyan), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 1.5rem;
             font-size: 1.3rem;
         }
@@ -270,19 +345,23 @@
         .about-languages {
             margin: 2rem 0;
             padding: 1.5rem;
-            background: rgba(212, 175, 55, 0.05);
+            background: rgba(0, 217, 255, 0.03);
             border-radius: 8px;
             color: var(--text-secondary);
+            border-left: 3px solid var(--cyan);
         }
 
         .about-languages strong {
-            color: var(--gold);
+            color: var(--cyan);
         }
 
         .about-quote {
             text-align: center;
             font-size: 1.2rem;
-            color: var(--gold);
+            background: linear-gradient(135deg, var(--cyan), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: 600;
             margin-top: 2.5rem;
             padding-top: 2.5rem;
@@ -301,12 +380,31 @@
             padding: 2rem;
             border-radius: 12px;
             border: 1px solid var(--border);
-            transition: transform 0.3s, border-color 0.3s;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--gold));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover::before {
+            transform: scaleX(1);
         }
 
         .article-card:hover {
             transform: translateY(-5px);
-            border-color: var(--gold);
+            border-color: var(--cyan);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.15);
         }
 
         .article-card h3 {
@@ -318,10 +416,14 @@
         .article-card h3 a {
             color: var(--text-primary);
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         .article-card h3 a:hover {
-            color: var(--gold);
+            background: linear-gradient(135deg, var(--cyan), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .article-card p {
@@ -331,7 +433,7 @@
 
         .article-date {
             font-size: 0.9rem;
-            color: var(--text-secondary);
+            color: var(--cyan);
         }
 
         .section-cta {
@@ -344,16 +446,17 @@
             padding: 3rem 5%;
             border-top: 1px solid var(--border);
             color: var(--text-secondary);
+            background: var(--card-bg);
         }
 
         footer a {
-            color: var(--gold);
+            color: var(--cyan);
             text-decoration: none;
             transition: color 0.3s;
         }
 
         footer a:hover {
-            color: var(--gold-dark);
+            color: var(--gold);
         }
 
         @media (max-width: 768px) {
@@ -372,13 +475,19 @@
             .section-title {
                 font-size: 2rem;
             }
+
+            .logo-img {
+                height: 40px;
+            }
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">WBSE</a>
+            <div class="logo-container">
+                <img src="assets/images/Logo_4.png" alt="WBSE Logo" class="logo-img">
+            </div>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#expertise">Expertise</a></li>
@@ -390,14 +499,16 @@
     </nav>
 
     <section class="hero">
-        <h1>Stephanie Jupiter Jacca</h1>
-        <p class="hero-subtitle">
-            CRM Data Quality Auditor & API Security Specialist<br>
-            Transforming messy data into strategic insights through AI-driven automation
-        </p>
-        <div class="cta-buttons">
-            <a href="mailto:wbse.consult@gmail.com" class="btn btn-primary">Let's Talk</a>
-            <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <div class="hero-content">
+            <h1>Stephanie Jupiter Jacca</h1>
+            <p class="hero-subtitle">
+                CRM Data Quality Auditor & API Security Specialist<br>
+                Transforming messy data into strategic insights through AI-driven automation
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:wbse.consult@gmail.com" class="btn btn-primary">Let's Talk</a>
+                <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank" class="btn btn-secondary">LinkedIn</a>
+            </div>
         </div>
     </section>
 
