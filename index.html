@@ -1,1 +1,556 @@
-https://stephaniejj.github.iocat
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie JJ | CRM Data Quality Auditor & API Security Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --gold-dark: #B8941E;
+            --blue: #5A7FA8;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            padding: 8rem 5% 6rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--gold), #f4d03f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--dark-bg);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--dark-bg);
+        }
+
+        .section {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .tech-badge {
+            background: var(--card-bg);
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .tech-badge:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .about-text {
+            color: var(--text-secondary);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .about-philosophy {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(90, 127, 168, 0.1));
+            padding: 2rem;
+            border-left: 4px solid var(--gold);
+            margin: 2.5rem 0;
+            font-style: italic;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .about-commitments {
+            margin: 2.5rem 0;
+        }
+
+        .about-commitments h3 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .about-commitments ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-commitments li {
+            padding: 0.8rem 0;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .about-languages {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 8px;
+            color: var(--text-secondary);
+        }
+
+        .about-languages strong {
+            color: var(--gold);
+        }
+
+        .about-quote {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .article-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .article-card h3 a:hover {
+            color: var(--gold);
+        }
+
+        .article-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .article-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .section-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--gold-dark);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">WBSE</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="mailto:wbse.consult@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Stephanie Jupiter Jacca</h1>
+        <p class="hero-subtitle">
+            CRM Data Quality Auditor & API Security Specialist<br>
+            Transforming messy data into strategic insights through AI-driven automation
+        </p>
+        <div class="cta-buttons">
+            <a href="mailto:wbse.consult@gmail.com" class="btn btn-primary">Let's Talk</a>
+            <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">
+                I help B2B SaaS companies and enterprises transform messy CRM data into reliable strategic assets
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">📊</span>
+                <h3>CRM Data Quality Audits</h3>
+                <p>Comprehensive analysis of duplicate detection, data completeness, and system reconciliation. Automated workflows to maintain 98%+ data quality across HubSpot, Salesforce, and custom CRMs.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔒</span>
+                <h3>API Security Analysis</h3>
+                <p>Pre-due diligence security audits for startups and enterprises. Repository scanning, log analysis, and vulnerability detection to identify suspicious API activity and security gaps.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🤖</span>
+                <h3>Churn Prevention & Predictive Analytics</h3>
+                <p>ML-powered churn prediction models with interactive dashboards. Identify at-risk customers early and implement data-driven retention strategies to reduce churn by up to 50%.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">⚙️</span>
+                <h3>Enterprise Automation Engineering</h3>
+                <p>Custom Python solutions for HubSpot workflow automation, data pipeline orchestration, and multi-system integration. Reduce manual audit time by 80% through intelligent automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">
+                Certified HubSpot specialist with deep expertise in RevOps automation, data science, and API security
+            </p>
+        </div>
+
+        <div class="tech-grid">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">HubSpot API</span>
+            <span class="tech-badge">Pandas & NumPy</span>
+            <span class="tech-badge">Plotly & Data Viz</span>
+            <span class="tech-badge">Machine Learning</span>
+            <span class="tech-badge">API Security</span>
+            <span class="tech-badge">SQL & Database Design</span>
+            <span class="tech-badge">Git & CI/CD</span>
+            <span class="tech-badge">OpenPyXL & Excel Automation</span>
+            <span class="tech-badge">RevOps & CRM Architecture</span>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+                From multilingual professional to data science specialist
+            </p>
+        </div>
+
+        <div class="about-content">
+            <p class="about-text">
+                My thirst for learning and insatiable curiosity led me to discover data science through AI, where I realized that data is much more than just numbers - it's a complete mapping of the past, a key to understanding the present, and a compass for anticipating the future.
+            </p>
+
+            <div class="about-philosophy">
+                "Raw data in untrained hands has limited value. But when articulated with strategic vision and technical expertise, it becomes the engine of business transformation."
+            </div>
+
+            <div class="about-commitments">
+                <h3>My Commitments</h3>
+                <ul>
+                    <li>🔍 CRM Audit: Identifying gaps and optimizing processes</li>
+                    <li>📊 Data Analytics: Transforming data into actionable insights</li>
+                    <li>🛡️ Ethics & Compliance: Placing user protection at the heart of data strategy</li>
+                    <li>🎯 Churn Prevention: Using predictive analytics to enhance customer loyalty</li>
+                </ul>
+            </div>
+
+            <div class="about-languages">
+                <strong>Languages:</strong> French (native), English (fluent), Arabic (learning)
+            </div>
+
+            <p class="about-text">
+                I firmly believe the future belongs to companies that can successfully blend technology, ethics, and strategic vision. My goal: to help you transform your data into gold while maintaining customer integrity and trust.
+            </p>
+
+            <div class="about-quote">
+                "Data is gold - but only a skilled artisan can reveal its true brilliance."
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Articles</h2>
+            <p class="section-subtitle">
+                Technical insights and thought leadership on CRM data quality, API security, and automation
+            </p>
+        </div>
+
+        <div class="articles-grid" id="articles-container"></div>
+
+        <div class="section-cta">
+            <a href="articles.html" class="btn btn-secondary">View All Articles</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stephanie JJ | WBSE - We Bring Support & Expertise</p>
+        <p style="margin-top: 1rem;">
+            <a href="mailto:wbse.consult@gmail.com">wbse.consult@gmail.com</a> | 
+            <a href="https://linkedin.com/in/stephanie-jupiter-jacca" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/stephaniejj" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        const posts = [
+            {
+                title: "Messy CRM Cleanup — Why Your CRM Gets Out of Control",
+                link: "/2024/11/10/messy-crm-cleanup.html",
+                date: "10 Novembre 2024",
+                excerpt: "A poorly maintained CRM can be costly for your business. Between duplicates, incomplete information, and misconfigured integrations, data quality deteriorates rapidly."
+            },
+            {
+                title: "Churn Prevention: Understanding and Reducing Customer Attrition",
+                link: "/crm/2025/11/09/churn-prevention-understanding-and-reducing-customer-attrition.html",
+                date: "9 Novembre 2025",
+                excerpt: "Découvrez comment anticiper et réduire le churn dans les entreprises B2B SaaS grâce à des modèles prédictifs et des audits CRM."
+            }
+        ];
+
+        const container = document.getElementById("articles-container");
+
+        posts.forEach(post => {
+            const article = document.createElement("div");
+            article.className = "article-card";
+            article.innerHTML = `
+                <h3><a href="${post.link}">${post.title}</a></h3>
+                <p>${post.excerpt}</p>
+                <small class="article-date">Publié le ${post.date}</small>
+            `;
+            container.appendChild(article);
+        });
+    </script>
+</body>
+</html>
