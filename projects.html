@@ -1,0 +1,265 @@
+---
+layout: default
+title: Projects
+---
+
+<style>
+/* Projects Section Styling */
+.projects-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.projects-hero p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.project-header h3 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #2d3748;
+}
+
+.badge {
+    background: #48bb78;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 1.1em;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.project-metrics {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    background: #f7fafc;
+    border-radius: 8px;
+}
+
+.metric-value {
+    font-size: 2em;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.metric-label {
+    font-size: 0.9em;
+    color: #718096;
+    margin-top: 5px;
+}
+
+.project-tech {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tech-badge {
+    background: #edf2f7;
+    color: #2d3748;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+}
+
+.project-highlights {
+    background: #f7fafc;
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    margin: 20px 0;
+}
+
+.project-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project-highlights li {
+    margin: 8px 0;
+    color: #4a5568;
+}
+
+@media (max-width: 768px) {
+    .projects-hero h1 {
+        font-size: 2em;
+    }
+    
+    .project-card {
+        padding: 25px;
+    }
+    
+    .project-metrics {
+        justify-content: center;
+    }
+}
+</style>
+
+<div class="projects-hero">
+    <h1>Featured Projects</h1>
+    <p>Production-ready solutions demonstrating CRM automation and data quality expertise</p>
+</div>
+
+<div class="projects-container">
+    
+    <div class="project-card">
+        <div class="project-header">
+            <h3>🚀 HubSpot CRM Bulk Import System</h3>
+            <span class="badge">Production Ready</span>
+        </div>
+        
+        <p class="project-description">
+            Zero-error automated bulk import system for HubSpot CRM with intelligent email extraction, 
+            smart association mapping, and comprehensive error handling. Reduces manual import time 
+            from 8 hours to 2 minutes.
+        </p>
+        
+        <div class="project-metrics">
+            <div class="metric">
+                <span class="metric-value">480x</span>
+                <span class="metric-label">Faster</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">0%</span>
+                <span class="metric-label">Error Rate</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">292</span>
+                <span class="metric-label">Records</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">$400+</span>
+                <span class="metric-label">Savings</span>
+            </div>
+        </div>
+        
+        <div class="project-highlights">
+            <strong>Key Features:</strong>
+            <ul>
+                <li>✅ Pre-import validation (email RFC 5322, international phones, duplicates)</li>
+                <li>✅ Smart email extraction from unstructured ticket content</li>
+                <li>✅ Automated associations (ticket→contact→company)</li>
+                <li>✅ Batch processing with retry logic and rate limiting</li>
+                <li>✅ Production-tested with 292 records (100% success rate)</li>
+            </ul>
+        </div>
+        
+        <div class="project-tech">
+            <span class="tech-badge">Python 3.8+</span>
+            <span class="tech-badge">HubSpot API v3</span>
+            <span class="tech-badge">pandas</span>
+            <span class="tech-badge">Data Engineering</span>
+            <span class="tech-badge">ETL Pipeline</span>
+        </div>
+        
+        <div class="project-links">
+            <a href="https://github.com/stephaniejj/hubspot-bulk-import" class="btn btn-primary" target="_blank">
+                View on GitHub →
+            </a>
+            <a href="https://github.com/stephaniejj/hubspot-bulk-import#readme" class="btn btn-secondary" target="_blank">
+                Read Documentation
+            </a>
+        </div>
+    </div>
+    
+    <div class="project-card" style="opacity: 0.6; border: 2px dashed #cbd5e0;">
+        <div class="project-header">
+            <h3>🔜 Coming Soon: CRM Data Quality Audit Tool</h3>
+        </div>
+        <p class="project-description">
+            Automated data quality assessment and reporting system for CRM databases.
+        </p>
+    </div>
+    
+</div>
