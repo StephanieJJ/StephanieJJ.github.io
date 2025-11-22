@@ -20,13 +20,14 @@
             min-height: 100vh;
         }
 
+        /* Navigation Bar */
         nav {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             background: rgba(0, 0, 0, 0.95);
-            padding: 15px 40px;
+            padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -35,13 +36,16 @@
             backdrop-filter: blur(10px);
         }
 
-        .logo-container {
-            height: 60px;
+        .logo {
+            height: 50px;
+            width: auto;
         }
 
-        .logo-container img {
-            height: 100%;
-            width: auto;
+        .logo-text {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #CD7F32;
+            font-family: 'Caviar Dreams', sans-serif;
         }
 
         .nav-links {
@@ -64,6 +68,7 @@
             border-bottom: 2px solid #00BCD4;
         }
 
+        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -71,16 +76,16 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 120px 20px 40px;
+            padding: 100px 20px 40px;
         }
 
         .profile-photo {
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             margin-bottom: 30px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
         }
 
         .profile-photo img {
@@ -197,19 +202,20 @@
             nav {
                 padding: 15px 20px;
             }
-            .logo-container {
-                height: 45px;
-            }
+            
             .nav-links {
                 gap: 20px;
                 font-size: 0.9em;
             }
+            
             .name {
                 font-size: 2em;
             }
+            
             .title {
                 font-size: 1.3em;
             }
+            
             .subtitle {
                 font-size: 1em;
             }
@@ -218,12 +224,10 @@
 </head>
 <body>
     <nav>
-        <div class="logo-container">
-            <img src="assets/images/logo.png" alt="WBSE Logo">
-        </div>
+        <div class="logo-text">WBSE</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -231,7 +235,7 @@
 
     <section class="hero">
         <div class="profile-photo">
-            <img src="assets/images/profile.jpg" alt="Stephanie Jupiter Jacca">
+            👤
         </div>
         
         <h1 class="name">Stephanie Jupiter Jacca</h1>
@@ -245,7 +249,7 @@
         </p>
         
         <div class="cta-buttons">
-            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
             <a href="#contact" class="btn btn-secondary">Contact</a>
         </div>
         
