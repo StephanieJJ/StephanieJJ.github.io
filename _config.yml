@@ -1,1 +1,8 @@
 permalink: /:year/:month/:day/:title/
+# Custom CSS
+sass:
+  style: compressed
+
+# Include custom stylesheet
+head_scripts:
+  - /assets/css/custom.css
