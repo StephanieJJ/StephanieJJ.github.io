@@ -1,100 +1,374 @@
-# My Tech Stack: Building Data-Driven CRM Solutions
-
-## Overview
-
-As a **CRM Specialist** focused on data quality and automation, I've built a tech stack that combines enterprise CRM platforms with modern data processing tools and AI-assisted workflows. My approach emphasizes **automation, scalability, and data integrity** over manual processes.
-
-## The Foundation: CRM & Automation
-
-### HubSpot Ecosystem
-I'm certified in both **HubSpot Service Hub and Sales Hub**, with deep expertise in:
-- Native API integration for custom workflows
-- Bulk operations handling (my flagship project: 292 records with 100% success rate and 480x performance improvement)
-- Advanced workflow automation
-
-### Python as the Core Engine
-Python serves as my primary automation language, powering:
-- Custom API integrations
-- Data processing pipelines
-- Automated ticket and contact management systems
-
-### Zapier for Rapid Integration
-For no-code solutions and rapid prototyping, I leverage Zapier to connect platforms and automate cross-system workflows.
-
-## Data Processing: Speed Meets Precision
-
-### Polars (Rust-Powered)
-I've adopted **Polars** as my primary data manipulation library for:
-- Large-scale data transformations (5-10x faster than traditional tools)
-- Pre-import data cleaning and validation
-- Memory-efficient processing of CRM exports
-
-### Pandas for Analysis
-I maintain **Pandas** expertise for:
-- Data analysis and exploration
-- Integration with the broader Python ecosystem
-- Legacy code compatibility
-
-### Jupyter Notebook
-My development environment of choice for:
-- Interactive data exploration
-- Prototyping automation scripts
-- Documenting analysis workflows
-
-## Business Intelligence
-
-### Power BI (Currently Learning)
-Expanding my skills to include:
-- Interactive dashboard creation
-- KPI tracking and visualization
-- Executive-level reporting
-
-### Excel
-Still relevant for:
-- Ad-hoc analysis
-- Stakeholder-friendly reporting
-- Quick data validation
-
-## Development & Version Control
-
-### Git/GitHub
-Professional practices including:
-- Version control for all projects
-- Public portfolio showcasing real implementations
-- Technical documentation
-
-### GitHub Pages
-Hosting my professional portfolio and technical blog, featuring articles on CRM data quality best practices.
-
-## AI-Assisted Workflow
-
-I use AI strategically as a **management and oversight tool**, primarily:
-- **Claude (Anthropic)** - My primary assistant
-- GPT-5, DeepSeek, and Grok for specialized tasks
-
-This philosophy allows me to focus on strategic decisions while AI handles routine technical details.
-
-## What Makes This Stack Unique
-
-This combination is rare in the CRM space:
-- **Technical depth** (Python, API integration, Rust-based tools)
-- **CRM expertise** (HubSpot certified, real-world implementations)
-- **Data focus** (automation and analysis over client communication)
-- **Modern approach** (AI-assisted, performance-optimized)
-
-## Target Applications
-
-This stack positions me for roles in:
-- CRM Specialist positions
-- CRM Operations Analyst roles
-- Data Analyst positions in CRM/SaaS
-- Especially in **GCC markets** (UAE focus) where technical CRM expertise is in high demand
-
-## Languages
-- French (Native)
-- English (Fluent)
-- Arabic (Beginner)
-
+---
+layout: default
+title: Tech Stack
 ---
 
-*Self-taught through systematic methodology | Background in air transport/logistics | Transitioned to data science and CRM automation*
+<style>
+/* Global Dark Background */
+body {
+    background: #0a0e27 !important;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.stack-hero {
+    background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin: 40px auto 80px;
+    border-radius: 20px;
+    max-width: 1200px;
+    box-shadow: 0 20px 60px rgba(0, 206, 209, 0.3);
+}
+
+.stack-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.stack-hero p {
+    font-size: 1.4em;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Container */
+.stack-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 100px;
+}
+
+/* Category Sections */
+.stack-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    color: #00CED1;
+    font-size: 2em;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #CD7F32;
+    display: inline-block;
+}
+
+/* Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Tech Card - Interactive */
+.tech-card {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00CED1, #CD7F32);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 60px rgba(0, 206, 209, 0.4);
+    border-color: #00CED1;
+}
+
+.tech-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Tech Icon */
+.tech-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+/* Tech Name */
+.tech-name {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Tech Description */
+.tech-description {
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+/* Tech Level Badge */
+.tech-level {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.level-expert {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+}
+
+.level-proficient {
+    background: rgba(0, 206, 209, 0.3);
+    color: #00CED1;
+    border: 2px solid #00CED1;
+}
+
+.level-learning {
+    background: rgba(205, 127, 50, 0.3);
+    color: #CD7F32;
+    border: 2px solid #CD7F32;
+}
+
+/* Special Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    border-left: 5px solid #00CED1;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.highlight-box h3 {
+    color: #CD7F32;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.highlight-box p {
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Languages Section */
+.languages {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.language-badge {
+    background: rgba(0, 206, 209, 0.2);
+    color: #00CED1;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: 2px solid rgba(0, 206, 209, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stack-hero h1 {
+        font-size: 2.2em;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="stack-hero">
+    <h1>My Tech Stack</h1>
+    <p>Building Data-Driven CRM Solutions with Modern Tools & AI-Assisted Workflows</p>
+</div>
+
+<div class="stack-container">
+    
+    <!-- CRM & Automation -->
+    <div class="stack-category">
+        <h2 class="category-title">🎯 CRM & Automation</h2>
+        <div class="tech-grid">
+            
+            <div class="tech-card">
+                <div class="tech-icon">🔧</div>
+                <h3 class="tech-name">HubSpot</h3>
+                <p class="tech-description">
+                    Certified in Service Hub & Sales Hub. Native API integration, bulk operations (292 records, 100% success, 480x faster), advanced workflow automation.
+                </p>
+                <span class="tech-level level-expert">Expert</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">🐍</div>
+                <h3 class="tech-name">Python</h3>
+                <p class="tech-description">
+                    Core automation engine. Custom API integrations, data processing pipelines, automated CRM management systems.
+                </p>
+                <span class="tech-level level-expert">Expert</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">⚡</div>
+                <h3 class="tech-name">Zapier</h3>
+                <p class="tech-description">
+                    No-code solutions for rapid prototyping. Cross-system workflow automation, platform integration.
+                </p>
+                <span class="tech-level level-proficient">Proficient</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Data Processing -->
+    <div class="stack-category">
+        <h2 class="category-title">📊 Data Processing</h2>
+        <div class="tech-grid">
+            
+            <div class="tech-card">
+                <div class="tech-icon">🚀</div>
+                <h3 class="tech-name">Polars</h3>
+                <p class="tech-description">
+                    Rust-powered data manipulation. 5-10x faster than traditional tools. Large-scale transformations, pre-import cleaning, memory-efficient processing.
+                </p>
+                <span class="tech-level level-expert">Expert</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">🐼</div>
+                <h3 class="tech-name">Pandas</h3>
+                <p class="tech-description">
+                    Data analysis and exploration. Ecosystem integration, legacy compatibility, statistical analysis.
+                </p>
+                <span class="tech-level level-expert">Expert</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">📓</div>
+                <h3 class="tech-name">Jupyter Notebook</h3>
+                <p class="tech-description">
+                    Development environment for interactive exploration, prototyping automation scripts, workflow documentation.
+                </p>
+                <span class="tech-level level-proficient">Proficient</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Business Intelligence -->
+    <div class="stack-category">
+        <h2 class="category-title">📈 Business Intelligence</h2>
+        <div class="tech-grid">
+            
+            <div class="tech-card">
+                <div class="tech-icon">📊</div>
+                <h3 class="tech-name">Power BI</h3>
+                <p class="tech-description">
+                    Interactive dashboards, KPI tracking, executive-level reporting. Currently expanding expertise.
+                </p>
+                <span class="tech-level level-learning">Learning</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">📑</div>
+                <h3 class="tech-name">Excel</h3>
+                <p class="tech-description">
+                    Ad-hoc analysis, stakeholder reporting, quick data validation. Still relevant for business users.
+                </p>
+                <span class="tech-level level-proficient">Proficient</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Development Tools -->
+    <div class="stack-category">
+        <h2 class="category-title">💻 Development & Version Control</h2>
+        <div class="tech-grid">
+            
+            <div class="tech-card">
+                <div class="tech-icon">🔀</div>
+                <h3 class="tech-name">Git / GitHub</h3>
+                <p class="tech-description">
+                    Version control, public portfolio, technical documentation. Professional development practices.
+                </p>
+                <span class="tech-level level-proficient">Proficient</span>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">🌐</div>
+                <h3 class="tech-name">GitHub Pages</h3>
+                <p class="tech-description">
+                    Portfolio hosting, technical blog. Showcasing CRM data quality best practices.
+                </p>
+                <span class="tech-level level-proficient">Proficient</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- AI-Assisted Workflow -->
+    <div class="highlight-box">
+        <h3>🤖 AI-Assisted Workflow</h3>
+        <p>
+            I use AI strategically as a <strong>management and oversight tool</strong>, not a replacement for expertise. 
+            Primary tools: <strong>Claude (Anthropic)</strong>, GPT-5, DeepSeek, and Grok for specialized tasks. 
+            This philosophy allows me to focus on strategic decisions while AI handles routine technical details.
+        </p>
+    </div>
+    
+    <!-- What Makes This Unique -->
+    <div class="highlight-box" style="border-left-color: #CD7F32;">
+        <h3>✨ What Makes This Stack Unique</h3>
+        <p>
+            This combination is rare in the CRM space:
+        </p>
+        <ul style="color: rgba(255,255,255,0.85); line-height: 1.8; font-size: 1.05em;">
+            <li><strong>Technical depth</strong> (Python, API integration, Rust-based tools)</li>
+            <li><strong>CRM expertise</strong> (HubSpot certified, real-world implementations)</li>
+            <li><strong>Data focus</strong> (automation and analysis over client communication)</li>
+            <li><strong>Modern approach</strong> (AI-assisted, performance-optimized)</li>
+        </ul>
+    </div>
+    
+    <!-- Languages -->
+    <div class="stack-category">
+        <h2 class="category-title">🌍 Languages</h2>
+        <div class="languages">
+            <span class="language-badge">🇫🇷 French (Native)</span>
+            <span class="language-badge">🇬🇧 English (Fluent)</span>
+            <span class="language-badge">🇸🇦 Arabic (Beginner)</span>
+        </div>
+    </div>
+    
+    <!-- Footer Note -->
+    <div style="text-align: center; margin-top: 80px; color: rgba(255,255,255,0.5); font-style: italic;">
+        Self-taught through systematic methodology | Background in air transport/logistics | Transitioned to data science and CRM automation
+    </div>
+    
+</div>
