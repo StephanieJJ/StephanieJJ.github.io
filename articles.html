@@ -1,48 +1,102 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Articles — Stephanie JJ</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-        h1 { color: #333; }
-        article { margin-bottom: 30px; }
-        a { text-decoration: none; color: #0066cc; }
-        a:hover { text-decoration: underline; }
-        small { color: #666; }
-    </style>
-</head>
-<body>
-    <h1>Articles</h1>
-    <div id="articles"></div>
+---
+layout: default
+title: Articles
+---
 
-    <script>
-        const posts = [
-            {
-                title: "Messy CRM Cleanup — Why Your CRM Gets Out of Control",
-                link: "_posts/2025-11-10-messy-crm-cleanup.md",
-                date: "10 Novembre 2024",
-                excerpt: "A poorly maintained CRM can be costly for your business. Between duplicates, incomplete information, and misconfigured integrations, data quality deteriorates rapidly."
-            },
-            {
-                title: "Churn Prevention: Understanding and Reducing Customer Attrition",
-                link: "_posts/2025-11-09-churn-prevention-understanding-and-reducing-customer-attrition.md",
-                date: "9 Novembre 2025",
-                excerpt: "Découvrez comment anticiper et réduire le churn dans les entreprises B2B SaaS grâce à des modèles prédictifs et des audits CRM."
-            }
-        ];
+<style>
+    .articles-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .articles-header {
+        margin-bottom: 50px;
+    }
+    
+    .articles-header h1 {
+        font-size: 2.5em;
+        color: #2d3748;
+        margin-bottom: 10px;
+    }
+    
+    .article-card {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    
+    .article-card h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    
+    .article-card h2 a {
+        color: #2d3748;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .article-card h2 a:hover {
+        color: #00CED1;
+    }
+    
+    .article-excerpt {
+        color: #4a5568;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .article-meta {
+        color: #718096;
+        font-size: 0.9em;
+    }
+    
+    .article-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+    
+    .tag {
+        background: #edf2f7;
+        color: #4a5568;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.85em;
+    }
+</style>
 
-        const container = document.getElementById("articles");
-
-        posts.forEach(post => {
-            const article = document.createElement("article");
-            article.innerHTML = `
-                <h2><a href="${post.link}">${post.title}</a></h2>
-                <p>${post.excerpt}</p>
-                <small>Publié le ${post.date}</small>
-            `;
-            container.appendChild(article);
-        });
-    </script>
-</body>
-</html>
+<div class="articles-container">
+    <div class="articles-header">
+        <h1>Articles</h1>
+    </div>
+    
+    {% for post in site.posts %}
+        {% if post.categories contains 'articles' %}
+        <article class="article-card">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+            <div class="article-meta">
+                Publié le {{ post.date | date: "%-d %B %Y" }}
+            </div>
+            {% if post.tags %}
+            <div class="article-tags">
+                {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </article>
+        {% endif %}
+    {% endfor %}
+</div>
