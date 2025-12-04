@@ -1,299 +1,287 @@
----
-layout: default
-title: Projects
----
-
-<style>
-/* Hero Section */
-.projects-hero {
-    background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    margin-bottom: 80px;
-    border-radius: 20px; /* ← AJOUTE CETTE LIGNE */
-    margin: 40px auto 80px; /* ← MODIFIE CETTE LIGNE */
-    max-width: 1200px;
-}
-
-.projects-hero h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-.projects-hero p {
-    font-size: 1.4em;
-    opacity: 0.95;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Projects Grid */
-.projects-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px 100px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-
-/* Project Card - Interactive Rectangle */
-.project-card {
-    position: relative;
-    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-    border-radius: 16px;
-    padding: 50px 40px;
-    min-height: 300px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    overflow: hidden;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #00CED1, #CD7F32);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-
-.project-card-link {
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-}
-
-.project-card-link:hover .project-card::before {
-    transform: scaleX(1);
-}
-
-.project-card-link:hover .project-card {
-    transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(0, 206, 209, 0.3);
-}
-
-/* Hover Effect - Arrow */
-.project-card-link .project-card::after {
-    content: '→';
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    font-size: 2em;
-    color: #00CED1;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.3s ease;
-}
-
-.project-card-link:hover .project-card::after {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Project Icon/Badge */
-.project-icon {
-    font-size: 3.5em;
-    margin-bottom: 25px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-}
-
-/* Project Title */
-.project-title {
-    color: white;
-    font-size: 1.8em;
-    font-weight: 700;
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-/* Project Description */
-.project-description {
-    color: rgba(255,255,255,0.8);
-    font-size: 1.05em;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* Project Tags */
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.tag {
-    background: rgba(0, 206, 209, 0.2);
-    color: #00CED1;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 600;
-    border: 1px solid rgba(0, 206, 209, 0.3);
-}
-
-/* Status Badge */
-.status-badge {
-    display: inline-block;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-}
-
-.status-live {
-    background: linear-gradient(135deg, #48bb78, #38a169);
-    color: white;
-    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
-}
-
-.status-coming {
-    background: rgba(205, 127, 50, 0.2);
-    color: #CD7F32;
-    border: 2px solid #CD7F32;
-}
-
-/* Metrics Preview */
-.metrics-preview {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    padding-top: 25px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.metric-item {
-    text-align: center;
-}
-
-.metric-value {
-    color: #00CED1;
-    font-size: 1.8em;
-    font-weight: 700;
-    display: block;
-}
-
-.metric-label {
-    color: rgba(255,255,255,0.6);
-    font-size: 0.85em;
-    margin-top: 5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .projects-hero h1 {
-        font-size: 2.2em;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .project-card {
-        padding: 40px 30px;
-    }
-}
-</style>
-
-<div class="projects-hero">
-    <h1>Featured Projects</h1>
-    <p>Production-ready solutions demonstrating CRM automation and data quality expertise</p>
-</div>
-
-<div class="projects-container">
-    <div class="projects-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Stephanie JJ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <!-- Project 1: HubSpot Bulk Import -->
-        <a href="https://github.com/stephaniejj/hubspot-bulk-import" target="_blank" class="project-card-link">
-            <div class="project-card">
-                <div class="project-icon">📦</div>
-                <span class="status-badge status-live">● LIVE</span>
-                <h3 class="project-title">HubSpot CRM Bulk Import System</h3>
-                <p class="project-description">
-                    Zero-error automated bulk import system. Reduces manual import time from 8 hours to 2 minutes.
-                </p>
-                <div class="metrics-preview">
-                    <div class="metric-item">
-                        <span class="metric-value">480x</span>
-                        <span class="metric-label">Faster</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-value">0%</span>
-                        <span class="metric-label">Errors</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-value">292</span>
-                        <span class="metric-label">Records</span>
-                    </div>
-                </div>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">HubSpot API</span>
-                    <span class="tag">ETL</span>
-                </div>
-            </div>
-        </a>
+        body {
+            background: #0a0e27;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+        }
         
-        <!-- Project 2: CRM Health Audit -->
-        <a href="/2025/12/01/crm-health-audit-jupiter-system/" class="project-card-link">
-            <div class="project-card">
-                <div class="project-icon">🔍</div>
-                <span class="status-badge status-live">● LIVE</span>
-                <h3 class="project-title">CRM Health Audit - JUPITER System</h3>
-                <p class="project-description">
-                    Professional CRM audit tool with AI-driven data quality analysis and interactive reporting.
-                </p>
-                <div class="metrics-preview">
-                    <div class="metric-item">
-                        <span class="metric-value">98.5%</span>
-                        <span class="metric-label">Accuracy</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-value">5K+</span>
-                        <span class="metric-label">Records</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-value">€175K</span>
-                        <span class="metric-label">Value</span>
-                    </div>
-                </div>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Plotly</span>
-                    <span class="tag">Data Quality</span>
-                </div>
-            </div>
-        </a>
+        /* Hero Section */
+        .projects-hero {
+            background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            margin: 40px auto 80px;
+            border-radius: 20px;
+            max-width: 1200px;
+            box-shadow: 0 20px 60px rgba(0, 206, 209, 0.3);
+        }
         
-        <!-- Project 3: Coming Soon -->
-        <div class="project-card" style="opacity: 0.7; cursor: default;">
-            <div class="project-icon">🚀</div>
-            <span class="status-badge status-coming">COMING SOON</span>
-            <h3 class="project-title">API Security Auditor</h3>
-            <p class="project-description">
-                Automated security assessment tool for API integrations with vulnerability detection.
-            </p>
-            <div class="project-tags">
-                <span class="tag">Security</span>
-                <span class="tag">API</span>
-                <span class="tag">Automation</span>
-            </div>
-        </div>
+        .projects-hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
         
+        .projects-hero p {
+            font-size: 1.4em;
+            opacity: 0.95;
+        }
+        
+        /* Container */
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+        
+        /* Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        /* Card */
+        .project-card {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-radius: 16px;
+            padding: 50px 40px;
+            min-height: 300px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #00CED1, #CD7F32);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .project-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .project-card-link:hover .project-card {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 206, 209, 0.4);
+        }
+        
+        .project-card-link:hover .project-card::before {
+            transform: scaleX(1);
+        }
+        
+        .project-icon {
+            font-size: 3.5em;
+            margin-bottom: 25px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .status-live {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+        }
+        
+        .project-title {
+            color: white;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .metrics-preview {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .metric-item {
+            text-align: center;
+        }
+        
+        .metric-value {
+            color: #00CED1;
+            font-size: 1.8em;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .metric-label {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85em;
+            margin-top: 5px;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .tag {
+            background: rgba(0, 206, 209, 0.2);
+            color: #00CED1;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid rgba(0, 206, 209, 0.3);
+        }
+        
+        /* Arrow hover effect */
+        .project-card::after {
+            content: '→';
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            font-size: 2em;
+            color: #00CED1;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card-link:hover .project-card::after {
+            opacity: 1;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects-hero h1 {
+                font-size: 2.2em;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-hero">
+        <h1>Featured Projects</h1>
+        <p>Production-ready solutions demonstrating CRM automation and data quality expertise</p>
     </div>
-</div>
+
+    <div class="projects-container">
+        <div class="projects-grid">
+            
+            <!-- Project 1: HubSpot Bulk Import -->
+            <a href="https://github.com/stephaniejj/hubspot-bulk-import" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <div class="project-icon">📦</div>
+                    <span class="status-badge status-live">● LIVE</span>
+                    <h3 class="project-title">HubSpot CRM Bulk Import System</h3>
+                    <p class="project-description">
+                        Zero-error automated bulk import system. Reduces manual import time from 8 hours to 2 minutes.
+                    </p>
+                    <div class="metrics-preview">
+                        <div class="metric-item">
+                            <span class="metric-value">480x</span>
+                            <span class="metric-label">Faster</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">0%</span>
+                            <span class="metric-label">Errors</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">292</span>
+                            <span class="metric-label">Records</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">HubSpot API</span>
+                        <span class="tag">ETL</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Project 2: CRM Health Audit -->
+            <a href="/2025/12/01/crm-health-audit-jupiter-system/" class="project-card-link">
+                <div class="project-card">
+                    <div class="project-icon">🔍</div>
+                    <span class="status-badge status-live">● LIVE</span>
+                    <h3 class="project-title">CRM Health Audit - JUPITER System</h3>
+                    <p class="project-description">
+                        Professional CRM audit tool with AI-driven data quality analysis and interactive reporting.
+                    </p>
+                    <div class="metrics-preview">
+                        <div class="metric-item">
+                            <span class="metric-value">98.5%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">5K+</span>
+                            <span class="metric-label">Records</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">€175K</span>
+                            <span class="metric-label">Value</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Plotly</span>
+                        <span class="tag">Data Quality</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Project 3: Coming Soon -->
+            <div class="project-card" style="opacity: 0.7;">
+                <div class="project-icon">🚀</div>
+                <span class="status-badge" style="background: rgba(205, 127, 50, 0.3); color: #CD7F32; border: 2px solid #CD7F32;">COMING SOON</span>
+                <h3 class="project-title">API Security Auditor</h3>
+                <p class="project-description">
+                    Automated security assessment tool for API integrations with vulnerability detection.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Security</span>
+                    <span class="tag">API</span>
+                    <span class="tag">Automation</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
