@@ -1,222 +1,258 @@
----
-layout: default
-title: Articles
----
-
-<style>
-/* Hero Section */
-.articles-hero {
-    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    margin-bottom: 80px;
-    border-bottom: 4px solid #00CED1;
-}
-
-.articles-hero h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.articles-hero p {
-    font-size: 1.4em;
-    opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Articles Grid */
-.articles-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px 100px;
-    background: #0a0e27;
-    min-height: 100vh;
-}
-
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-
-/* Article Card - Interactive Rectangle */
-.article-card {
-    position: relative;
-    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-    border-radius: 16px;
-    padding: 40px;
-    min-height: 280px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.article-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #00CED1, #CD7F32);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-
-.article-card-link {
-    text-decoration: none;
-    display: block;
-    color: inherit;
-}
-
-.article-card-link:hover .article-card::before {
-    transform: scaleX(1);
-}
-
-.article-card-link:hover .article-card {
-    transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(0, 206, 209, 0.4);
-}
-
-/* Hover Arrow */
-.article-card-link .article-card::after {
-    content: '→';
-    position: absolute;
-    bottom: 25px;
-    right: 30px;
-    font-size: 2em;
-    color: #00CED1;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.3s ease;
-}
-
-.article-card-link:hover .article-card::after {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Article Icon */
-.article-icon {
-    font-size: 3em;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-}
-
-/* Article Title */
-.article-title {
-    color: white;
-    font-size: 1.6em;
-    font-weight: 700;
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-/* Article Excerpt */
-.article-excerpt {
-    color: rgba(255,255,255,0.75);
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* Article Meta */
-.article-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    margin-top: auto;
-}
-
-.article-date {
-    color: rgba(255,255,255,0.6);
-    font-size: 0.9em;
-}
-
-/* Article Tags */
-.article-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.tag {
-    background: rgba(0, 206, 209, 0.2);
-    color: #00CED1;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    font-weight: 600;
-    border: 1px solid rgba(0, 206, 209, 0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .articles-hero h1 {
-        font-size: 2.2em;
-    }
-    
-    .articles-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .article-card {
-        padding: 30px;
-    }
-}
-</style>
-
-<div class="articles-hero">
-    <h1>Articles</h1>
-    <p>Insights on CRM optimization, data quality, and automation strategies</p>
-</div>
-
-<div class="articles-container">
-    <div class="articles-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Stephanie JJ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        {% for post in site.posts %}
-            {% if post.categories contains 'articles' %}
-            <a href="{{ post.url }}" class="article-card-link">
+        body {
+            background: #0a0e27;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+        }
+        
+        /* Hero Section */
+        .articles-hero {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            margin: 40px auto 80px;
+            border-radius: 20px;
+            max-width: 1200px;
+            border: 2px solid #00CED1;
+            box-shadow: 0 20px 60px rgba(0, 206, 209, 0.3);
+        }
+        
+        .articles-hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .articles-hero p {
+            font-size: 1.4em;
+            opacity: 0.9;
+        }
+        
+        /* Container */
+        .articles-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+        
+        /* Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        /* Card */
+        .article-card {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-radius: 16px;
+            padding: 40px;
+            min-height: 280px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #00CED1, #CD7F32);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .article-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-card-link:hover .article-card {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 206, 209, 0.4);
+        }
+        
+        .article-card-link:hover .article-card::before {
+            transform: scaleX(1);
+        }
+        
+        .article-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .article-title {
+            color: white;
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .article-excerpt {
+            color: rgba(255,255,255,0.75);
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .article-date {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9em;
+        }
+        
+        .article-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: rgba(0, 206, 209, 0.2);
+            color: #00CED1;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            border: 1px solid rgba(0, 206, 209, 0.3);
+        }
+        
+        /* Arrow hover effect */
+        .article-card::after {
+            content: '→';
+            position: absolute;
+            bottom: 25px;
+            right: 30px;
+            font-size: 2em;
+            color: #00CED1;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .article-card-link:hover .article-card::after {
+            opacity: 1;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .articles-hero h1 {
+                font-size: 2.2em;
+            }
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="articles-hero">
+        <h1>Articles</h1>
+        <p>Insights on CRM optimization, data quality, and automation strategies</p>
+    </div>
+
+    <div class="articles-container">
+        <div class="articles-grid">
+            
+            <!-- Article 1: CRM Health Audit -->
+            <a href="/2025/12/01/crm-health-audit-jupiter-system/" class="article-card-link">
                 <div class="article-card">
-                    <div class="article-icon">📝</div>
-                    <h3 class="article-title">{{ post.title | remove: '"' }}</h3>
+                    <div class="article-icon">🔍</div>
+                    <h3 class="article-title">CRM Health Audit - JUPITER System</h3>
                     <p class="article-excerpt">
-                        {% if post.excerpt %}
-                            {{ post.excerpt | strip_html | truncatewords: 25 }}
-                        {% else %}
-                            {{ post.content | strip_html | truncatewords: 25 }}
-                        {% endif %}
+                        Professional CRM health audit system with automated data quality analysis using JUPITER methodology. Detects duplicates, analyzes completeness, and provides actionable insights.
                     </p>
                     <div class="article-meta">
-                        <span class="article-date">
-                            {{ post.date | date: "%-d %B %Y" }}
-                        </span>
-                        {% if post.tags %}
+                        <span class="article-date">1 Décembre 2025</span>
                         <div class="article-tags">
-                            {% for tag in post.tags limit:2 %}
-                            <span class="tag">{{ tag }}</span>
-                            {% endfor %}
+                            <span class="tag">CRM</span>
+                            <span class="tag">Python</span>
                         </div>
-                        {% endif %}
                     </div>
                 </div>
             </a>
-            {% endif %}
-        {% endfor %}
-        
+            
+            <!-- Article 2: HubSpot Bulk Import -->
+            <a href="/2025/12/01/hubspot-bulk-import-system/" class="article-card-link">
+                <div class="article-card">
+                    <div class="article-icon">📦</div>
+                    <h3 class="article-title">HubSpot CRM Bulk Import System</h3>
+                    <p class="article-excerpt">
+                        Zero-error automated bulk import system. Reduces manual import time from 8 hours to 2 minutes with 480x performance improvement and 100% success rate.
+                    </p>
+                    <div class="article-meta">
+                        <span class="article-date">1 Décembre 2025</span>
+                        <div class="article-tags">
+                            <span class="tag">HubSpot</span>
+                            <span class="tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Article 3: Messy CRM Cleanup -->
+            <a href="/articles/2025/11/10/messy-crm-cleanup/" class="article-card-link">
+                <div class="article-card">
+                    <div class="article-icon">🧹</div>
+                    <h3 class="article-title">Messy CRM Cleanup — Why Your CRM Gets Out of Control</h3>
+                    <p class="article-excerpt">
+                        A poorly maintained CRM can be costly for your business. Between duplicates, incomplete information, and misconfigured integrations, data quality deteriorates rapidly.
+                    </p>
+                    <div class="article-meta">
+                        <span class="article-date">10 Novembre 2025</span>
+                        <div class="article-tags">
+                            <span class="tag">Data Quality</span>
+                            <span class="tag">CRM</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Article 4: Churn Prevention -->
+            <a href="/articles/2025/11/09/churn-prevention-understanding-and-reducing-customer-attrition/" class="article-card-link">
+                <div class="article-card">
+                    <div class="article-icon">📉</div>
+                    <h3 class="article-title">Churn Prevention: Understanding and Reducing Customer Attrition</h3>
+                    <p class="article-excerpt">
+                        Découvrez comment anticiper et réduire le churn dans les entreprises B2B SaaS grâce à des modèles prédictifs et des audits CRM.
+                    </p>
+                    <div class="article-meta">
+                        <span class="article-date">9 Novembre 2025</span>
+                        <div class="article-tags">
+                            <span class="tag">Churn</span>
+                            <span class="tag">B2B SaaS</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
     </div>
-</div>
+</body>
+</html>
