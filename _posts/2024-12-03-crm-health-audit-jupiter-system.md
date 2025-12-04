@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CRM Health Audit - JUPITER System"
-date: 2024-12-03
+date: 2024-12-01
 categories: [project, automation]
 tags: [Python, HubSpot, CRM, Data Quality, API, Automation]
 github: https://github.com/StephanieJJ/CRM-Health-Audit
