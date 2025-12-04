@@ -1,19 +1,66 @@
-/* Nom du site en bronze */
-.site-title,
-.site-header a,
-header a[href="/"],
-nav a:first-child {
-    color: #CD7F32 !important;
-    font-weight: 700 !important;
-}
+/* ========================================
+   GLOBAL DARK THEME & BRONZE BRANDING
+   ======================================== */
 
 /* Background noir partout */
 body {
     background: #0a0e27 !important;
+    color: white !important;
     min-height: 100vh;
 }
 
-/* Texte par défaut en blanc */
-body, p, h1, h2, h3, h4, h5, h6 {
+/* Nom du site "Stephanie JJ" en bronze */
+.site-title,
+.site-header .site-title,
+header .site-title,
+.site-nav .site-title,
+nav a:first-child,
+header a[href="/"],
+header a[href="index.html"],
+.site-header a:first-child {
+    color: #CD7F32 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+/* Navigation links en blanc */
+.site-nav a,
+header nav a,
+.site-header nav a {
     color: white !important;
+}
+
+.site-nav a:hover,
+header nav a:hover {
+    color: #00CED1 !important;
+}
+
+/* Texte par défaut en blanc */
+h1, h2, h3, h4, h5, h6, p, li, span, div {
+    color: white;
+}
+
+/* Links en cyan */
+a {
+    color: #00CED1;
+}
+
+a:hover {
+    color: #CD7F32;
+}
+
+/* Header/Footer dark */
+.site-header,
+.site-footer,
+header,
+footer {
+    background: #0a0e27 !important;
+    border-bottom: 2px solid #00CED1;
+}
+
+/* Content wrapper dark */
+.page-content,
+.wrapper,
+main {
+    background: #0a0e27 !important;
 }
