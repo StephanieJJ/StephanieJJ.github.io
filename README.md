@@ -27,7 +27,7 @@ Specialized in **data quality, API safety, and CRM automation**, I turn complex 
 
 ## 🤖 My Method: AI as a Co-Pilot, Human Judgment as the Safeguard
 
-I don't write complex algorithms from scratch. I design, orchestrate, and validate.
+I don't write complex algorithms from scratch. I design, drive, orchestrate, and validate.
 
 - **AI generates the scripts** (API testing logic, validation routines, audits)
 - **I verify, analyze, and interpret** the results
