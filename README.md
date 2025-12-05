@@ -1,166 +1,93 @@
-# Hi, I'm Stephanie Jupiter Jacca
+# Stephanie Jupiter Jacca — CRM Specialist Portfolio
 
-**CRM Quality Auditor & API Security Specialist**
-
-I specialize in ensuring data integrity and security in HubSpot ecosystems through comprehensive audits, intelligent automation, and proactive monitoring.
+**AI-Driven Data Quality & API Automation Expert**
 
 ---
 
-## 🎯 What I Do
+## 🎯 About Me
 
-I help businesses transform chaotic CRM systems into reliable, secure, and compliant data environments.
+I'm a French AI-Driven CRM Specialist, self-taught in data and originally trained in logistics and airport operations. My work is built on one conviction: **clean data is gold**. It helps you understand the past, navigate the present, and predict the future.
 
-### Core Services:
-- 🔍 **CRM Quality Audits** - Comprehensive data analysis with actionable insights
-- 🔒 **API Security Assessment** - Testing and validation of CRM integrations
-- ✅ **Compliance Support** - GDPR, ISO 27001, SOC 2 alignment
-- 🤖 **Automated Monitoring** - Anomaly detection and alert systems
+Specialized in **data quality, API safety, and CRM automation**, I turn complex environments into reliable, scalable, and decision-ready systems.
 
 ---
 
-## 📊 Results That Matter
+## 🔧 What I Actually Do
 
-**Data Quality Improvements:**
-- 98% import success rate (from 60%)
-- 49% reduction in customer churn
-- $1M+ annual value retained through predictive analytics
-
-**Why This Matters:**  
-73% of businesses make decisions based on incomplete CRM data, costing an average of $15M annually. I prevent these issues through systematic audits and intelligent automation.
-
----
-
-**Specializations:**
-- Data governance & traceability
-- API security & validation
-- Workflow automation
-- Compliance frameworks (GDPR, ISO 27001, SOC 2)
+- **AI-powered CRM audits**
+- **Automated script generation** (API tests, validations, logical checks)
+- **Python automation pipelines** (data cleaning, validation, transformation)
+- **Design and optimization of CRM workflows** (HubSpot — Service Hub certified)
+- **Creation of clear, decision-ready dashboards**
+- **Transforming raw data** into simple, meaningful visuals for non-technical audiences
+- **Advanced analysis in Jupyter** (pandas, numpy)
+- **Clear, precise communication** in French and English
 
 ---
 
-## 📚 Featured Articles
+## 🤖 My Method: AI as a Co-Pilot, Human Judgment as the Safeguard
 
-### [AI-Driven HubSpot Data Import with Smart Property Mapping](./blog/2025/11/08/ai-driven-hubspot-data-import-with-smart-property-mapping/)
-Intelligent import system that automatically maps CSV headers to HubSpot properties using fuzzy matching and validation. Achieved 98% success rate with zero manual intervention.
+I don't write complex algorithms from scratch. I design, orchestrate, and validate.
 
-**Key Features:**
-- Automatic property schema retrieval
-- Intelligent header mapping with AI-like suggestions
-- Type validation and conversion
-- Batch processing with error handling
-
-**Technologies:** Python, HubSpot API, Pandas, Fuzzy Matching
+- **AI generates the scripts** (API testing logic, validation routines, audits)
+- **I verify, analyze, and interpret** the results
+- **Then I turn everything into business-focused recommendations** for retention, activation, and operational efficiency
 
 ---
 
-### [Building Intelligent HubSpot Workflows with AI-Driven Logic](./blog/2025/11/08/building-intelligent-hubspot-workflows-with-ai-driven-logic/)
-Hybrid automation system combining Python ML models with HubSpot workflows for predictive churn prevention. Reduced churn by 49% and improved engagement rates by 180%.
+## 💎 My Value
 
-**Results:**
-- 18% churn rate (down from 35%)
-- 2-hour response time (down from 5 days)
-- $1,020,000 annual value retained
-- 4,080% ROI
+**Hiring me is hiring a team.** One person — amplified by multiple AI assistants. The result: **high execution speed, strong quality control, and full autonomy.**
 
-**Technologies:** Python, scikit-learn, HubSpot API, Machine Learning
+I bridge the gap between:
+
+➡️ **CRM & Customer Success needs**  
+➡️ **Technical reality:** APIs, scripts, data pipelines, dashboards, workflows
 
 ---
 
-## 🛠️ Portfolio Projects
+## 🎯 What I Deliver
 
-### CRM Audit Dashboard
-Streamlit-based interactive dashboard for real-time CRM quality assessment.
-- Live data quality scoring
-- Automated anomaly detection
-- Compliance reporting (GDPR, ISO 27001)
-- Export functionality for audit reports
-
-### API Security Testing Suite
-Python toolkit for validating HubSpot API integrations.
-- Authentication testing
-- Rate limit compliance
-- Data validation
-- Security vulnerability scanning
-
-### Churn Prediction Model
-Machine learning system for proactive customer retention.
-- Multi-source data aggregation
-- Predictive risk scoring
-- Automated workflow triggers
-- Real-time monitoring dashboard
+✅ Reliable, clean, actionable data  
+✅ Safe, controlled API integrations  
+✅ Dashboards that truly support decision-making  
+✅ A CRM that boosts retention and customer experience  
+✅ Clear, structured communication (FR / EN)
 
 ---
 
-## 📫 Get In Touch
+## 🚀 Featured Projects
 
-**Professional Inquiries:**
-- 📧 Email: [stephanie.jupiter@example.com](mailto:jupiter.jacca@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/stephanie-jupiter-jacca](#)
+### 1. [CRM Health Audit - JUPITER System](https://stephaniejj.github.io/2025/12/01/crm-health-audit-jupiter-system/)
+Professional CRM audit tool with automated data quality analysis using JUPITER methodology.
+- **98.5% accuracy** in duplicate detection
+- **5,000+ records** analyzed
+- **€175K value** recovery potential
 
-**Languages:** French (native) | English (fluent) | Arabic (beginner)  
-**Location:** Remote | Open to GCC relocation (UAE, Qatar, Saudi Arabia, Oman)
-
----
-
-## 🎓 Certifications
-
-- ✅ HubSpot Sales Hub Certified
-- ✅ HubSpot Service Hub Certified
+### 2. [HubSpot CRM Bulk Import System](https://stephaniejj.github.io/2025/12/01/hubspot-bulk-import-system/)
+Zero-error automated bulk import system.
+- **480x faster** than manual import
+- **0% error rate** across 292 records
+- **$400+ savings** per import
 
 ---
 
-## 🔧 Tech Stack
+## 📬 Contact
 
-![Python](https://img.shields.io/badge/-Python-000?&logo=Python&logoColor=10b981)
-![HubSpot](https://img.shields.io/badge/-HubSpot-000?&logo=HubSpot&logoColor=10b981)
-![Pandas](https://img.shields.io/badge/-Pandas-000?&logo=Pandas&logoColor=10b981)
-![scikit-learn](https://img.shields.io/badge/-scikit%20learn-000?&logo=scikit-learn&logoColor=10b981)
-![SQL](https://img.shields.io/badge/-SQL-000?&logo=PostgreSQL&logoColor=10b981)
-![Git](https://img.shields.io/badge/-Git-000?&logo=Git&logoColor=10b981)
-![VS Code](https://img.shields.io/badge/-VS%20Code-000?&logo=Visual-Studio-Code&logoColor=10b981)
+- **Email:** [wbse.consult@gmail.com](mailto:wbse.consult@gmail.com)
+- **LinkedIn:** [stephanie-jupiter-jacca](https://www.linkedin.com/in/stephanie-jupiter-jacca/)
+- **Portfolio:** [stephaniejj.github.io](https://stephaniejj.github.io)
 
 ---
 
-## 💡 Key Differentiators
+## 🛠️ Tech Stack
 
-**What sets me apart:**
-1. **Technical depth** - Not just configuration, but custom solutions with code
-2. **AI integration** - Predictive analytics and intelligent automation
-3. **Compliance expertise** - GDPR, ISO 27001, SOC 2 practical implementation
-4. **Measurable results** - Every solution delivers quantifiable ROI
-
-**Approach:**
-- AI orchestration 
-- Data-driven decision making
-- Proactive monitoring over reactive fixes
-- Automation with intelligence, not just rules
-- Security and compliance built-in, not bolted-on
+**CRM & Automation:** HubSpot (certified), Python, Zapier  
+**Data Processing:** Polars, Pandas, Jupyter Notebook  
+**Business Intelligence:** Power BI, Excel  
+**Development:** Git/GitHub, GitHub Pages  
+**AI Tools:** Claude (Anthropic), GPT-5, DeepSeek
 
 ---
 
-## 🌟 Open to Opportunities
-
-I'm currently open to:
-- Remote positions 
-- Consulting projects
-- Technical partnerships
-
----
-
-## 📜 License
-
-This portfolio is © 2025 Stephanie Jupiter Jacca. All rights reserved.
-
-Articles and code snippets are shared for educational purposes. Please contact for commercial use.
-
----
-
-<div align="center">
-
-**Built with ❤️ using Jekyll and GitHub Pages**
-
-[View Portfolio](https://yoursite.github.io) • [Read Articles](https://yoursite.github.io/blog/) • [Get In Touch](mailto:stephanie.jupiter@example.com)
-
-</div>
-
-
+**Self-taught through systematic methodology | Background in air transport/logistics | Transitioned to data science and CRM automation**
