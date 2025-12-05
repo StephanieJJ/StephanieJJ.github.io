@@ -130,6 +130,7 @@ Machine learning system for proactive customer retention.
 4. **Measurable results** - Every solution delivers quantifiable ROI
 
 **Approach:**
+- AI orchestration 
 - Data-driven decision making
 - Proactive monitoring over reactive fixes
 - Automation with intelligence, not just rules
@@ -143,7 +144,6 @@ I'm currently open to:
 - Remote positions 
 - Consulting projects
 - Technical partnerships
-- Speaking engagements on CRM quality & API security
 
 ---
 
