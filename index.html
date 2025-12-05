@@ -94,4 +94,494 @@
             font-weight: 700;
             color: #CD7F32;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(205, 127, 50, 0.4
+            text-shadow: 2px 2px 8px rgba(205, 127, 50, 0.4);
+            letter-spacing: 2px;
+            font-family: 'Caviar Dreams', sans-serif;
+        }
+
+        .title {
+            font-size: 1.8em;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #FFFFFF;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Caviar Dreams', sans-serif;
+        }
+
+        .btn-primary {
+            background: #CD7F32;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background: #B8733D;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(205, 127, 50, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #CD7F32;
+            border: 2px solid #CD7F32;
+        }
+
+        .btn-secondary:hover {
+            background: #CD7F32;
+            color: #FFFFFF;
+            transform: translateY(-3px);
+        }
+
+        .expertise-preview {
+            margin-top: 80px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 12px;
+            min-width: 200px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            background: rgba(0, 188, 212, 0.1);
+            border-color: #00BCD4;
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .skill-title {
+            font-size: 1.2em;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about-section {
+            min-height: 100vh;
+            padding: 120px 20px;
+            background: #000000;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            font-size: 3em;
+            color: #CD7F32;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .about-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+
+        .about-intro p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .about-intro strong {
+            color: #00BCD4;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .about-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid rgba(205, 127, 50, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .about-card:hover {
+            background: rgba(205, 127, 50, 0.05);
+            border-color: #CD7F32;
+            transform: translateY(-5px);
+        }
+
+        .about-card h3 {
+            font-size: 1.8em;
+            color: #CD7F32;
+            margin-bottom: 20px;
+        }
+
+        .about-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-card ul li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .about-card ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #00BCD4;
+            font-weight: bold;
+        }
+
+        .about-card ul.deliverables li::before {
+            content: '';
+        }
+
+        .method-title {
+            font-style: italic;
+            color: #00BCD4;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .value-statement {
+            font-size: 1.15em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .bridge-statement {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1a1a 100%);
+        }
+
+        .contact-container {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 3em;
+            color: #CD7F32;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .contact-subtitle {
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 16px;
+            min-width: 280px;
+            border: 2px solid rgba(205, 127, 50, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(205, 127, 50, 0.1);
+            border-color: #CD7F32;
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(205, 127, 50, 0.3);
+        }
+
+        .contact-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .contact-method-title {
+            font-size: 1.3em;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-link {
+            color: #00BCD4;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: #CD7F32;
+        }
+
+        .email-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #CD7F32, #B8733D);
+            color: #FFFFFF;
+            padding: 18px 50px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .email-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(205, 127, 50, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+            .logo-container {
+                height: 45px;
+            }
+            .nav-links {
+                gap: 20px;
+                font-size: 0.9em;
+            }
+            .name {
+                font-size: 2em;
+            }
+            .title {
+                font-size: 1.3em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            .contact-title {
+                font-size: 2em;
+            }
+            .contact-methods {
+                flex-direction: column;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="WBSE Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="tech-stack.html">Tech Stack</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="profile-photo">
+            <img src="assets/images/profile.jpg" alt="Stephanie Jupiter Jacca">
+        </div>
+        
+        <h1 class="name">Stephanie Jupiter Jacca</h1>
+        
+        <h2 class="title">
+            CRM Specialist | AI-Driven Data Quality & API Automation
+        </h2>
+        
+        <p class="subtitle">
+            "Combining AI, Python, and API expertise to deliver production-ready CRM automation solutions"
+        </p>
+        
+        <div class="cta-buttons">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact</a>
+        </div>
+        
+        <div class="expertise-preview">
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <div class="skill-title">AI-Python Automation</div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <div class="skill-title">Data Quality</div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">🔗</div>
+                <div class="skill-title">API Integration</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">About Me</h2>
+            
+            <div class="about-intro">
+                <p>
+                    I'm a French AI-Driven CRM Specialist, self-taught in data and originally trained in logistics and airport operations. 
+                    My work is built on one conviction: <strong>clean data is gold</strong>. It helps you understand the past, navigate the present, and predict the future.
+                </p>
+                <p>
+                    Specialized in <strong>data quality, API safety, and CRM automation</strong>, I turn complex environments into reliable, scalable, and decision-ready systems.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🔧 What I Actually Do</h3>
+                    <ul>
+                        <li>AI-powered CRM audits</li>
+                        <li>Automated script generation (API tests, validations, logical checks)</li>
+                        <li>Python automation pipelines (data cleaning, validation, transformation)</li>
+                        <li>Design and optimization of CRM workflows (HubSpot — Service Hub certified)</li>
+                        <li>Creation of clear, decision-ready dashboards</li>
+                        <li>Transforming raw data into simple, meaningful visuals for non-technical audiences</li>
+                        <li>Advanced analysis in Jupyter (pandas, numpy)</li>
+                        <li>Clear, precise communication in French and English</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3>🤖 My Method</h3>
+                    <p class="method-title">AI as a co-pilot, human judgment as the safeguard</p>
+                    <p>
+                        I don't write complex algorithms from scratch. I design, orchestrate, and validate.
+                    </p>
+                    <ul>
+                        <li><strong>AI generates the scripts</strong> (API testing logic, validation routines, audits)</li>
+                        <li><strong>I verify, analyze, and interpret</strong> the results</li>
+                        <li><strong>Then I turn everything into business-focused recommendations</strong> for retention, activation, and operational efficiency</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3>💎 My Value</h3>
+                    <p class="value-statement">
+                        <strong>Hiring me is hiring a team.</strong> One person — amplified by multiple AI assistants. 
+                        The result: high execution speed, strong quality control, and full autonomy.
+                    </p>
+                    <p class="bridge-statement">
+                        I bridge the gap between:<br>
+                        ➡️ CRM & Customer Success needs<br>
+                        ➡️ Technical reality: APIs, scripts, data pipelines, dashboards, workflows
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>🎯 What I Deliver</h3>
+                    <ul class="deliverables">
+                        <li>✅ Reliable, clean, actionable data</li>
+                        <li>✅ Safe, controlled API integrations</li>
+                        <li>✅ Dashboards that truly support decision-making</li>
+                        <li>✅ A CRM that boosts retention and customer experience</li>
+                        <li>✅ Clear, structured communication (FR / EN)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">Let's Work Together</h2>
+            <p class="contact-subtitle">
+                Ready to optimize your CRM with AI-driven automation? Get in touch to discuss your project.
+            </p>
+            
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-method-title">Email</h3>
+                    <a href="mailto:wbse.consult@gmail.com" class="contact-link">wbse.consult@gmail.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3 class="contact-method-title">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/stephanie-jupiter-jacca/" target="_blank" class="contact-link">Connect on LinkedIn</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3 class="contact-method-title">GitHub</h3>
+                    <a href="https://github.com/StephanieJJ" target="_blank" class="contact-link">View GitHub Profile</a>
+                </div>
+            </div>
+            
+            <a href="mailto:wbse.consult@gmail.com" class="email-button">📧 Send Me an Email</a>
+        </div>
+    </section>
+</body>
+</html>
