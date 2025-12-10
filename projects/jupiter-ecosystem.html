@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUPITER Ecosystem - CRM Intelligence Suite</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0e27;
+            color: white;
+        }
+        .hero {
+            background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .product-card {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 206, 209, 0.4);
+        }
+        .product-card h2 {
+            color: #00CED1;
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 0.5rem;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .coming-soon {
+            opacity: 0.6;
+            background: #555;
+        }
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🪐 JUPITER Ecosystem</h1>
+        <p>Complete CRM Intelligence Platform Suite</p>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; margin: 3rem 0 2rem 0;">Product Suite</h2>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>🔍 JUPITER Audit</h2>
+                <p><strong>60+ Data Points Analysis</strong></p>
+                <p>Professional CRM quality analysis tool. Detects duplicates, tracks performance, generates reports.</p>
+                <ul>
+                    <li>Data quality scoring</li>
+                    <li>Duplicate detection</li>
+                    <li>SLA compliance</li>
+                    <li>Business impact analysis</li>
+                </ul>
+                <a href="jupiter-audit.html" class="btn">View Details</a>
+                <a href="https://jupiter-audit-demo.streamlit.app" class="btn" target="_blank">Try Demo</a>
+            </div>
+
+            <div class="product-card">
+                <h2>📉 JUPITER Churn</h2>
+                <p><strong>AI-Powered Prediction</strong></p>
+                <p>Predict customer churn before it happens with ML models.</p>
+                <ul>
+                    <li>Churn probability scoring</li>
+                    <li>Risk segmentation</li>
+                    <li>Retention recommendations</li>
+                    <li>Real-time monitoring</li>
+                </ul>
+                <a href="#" class="btn coming-soon">Coming Soon</a>
+            </div>
+
+            <div class="product-card">
+                <h2>💡 JUPITER Insights</h2>
+                <p><strong>Automated Reporting</strong></p>
+                <p>AI-generated insights and automated weekly reports.</p>
+                <ul>
+                    <li>Trend detection</li>
+                    <li>Performance benchmarks</li>
+                    <li>Executive dashboards</li>
+                    <li>Custom alerts</li>
+                </ul>
+                <a href="#" class="btn coming-soon">In Development</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0;">
+            <h2>Interested in the full suite?</h2>
+            <p>Contact us for enterprise pricing and implementations</p>
+            <a href="mailto:jupiter.jacca@gmail.com" class="btn">Contact Sales</a>
+            <a href="/" class="btn" style="background: #2d3748; border: 2px solid #00CED1;">Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
