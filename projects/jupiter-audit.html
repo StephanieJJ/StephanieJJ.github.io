@@ -1,208 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
   <title>Test Jupiter Audit Cards</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #1E1E1E;
-      margin: 20px;
-      line-height: 1.6;
-    }
-    h2 {
-      color: #b08d57; /* bronze */
-    }
-    h3, h4 {
-      color: #00bcd4; /* cyan */
-    }
-    hr {
-      border: 0;
-      height: 1px;
-      background: #ccc;
-      margin: 20px 0;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    p strong {
-      color: #00acc1; /* cyan variant */
-    }
-    section#jupiter-audit {
-      max-width: 1200px;
-      margin: auto;
-    }
-    .offers-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .offer-card {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 0 15px 3px rgba(0, 188, 212, 0.5);
-      width: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-    .offer-card:hover {
-      box-shadow: 0 0 25px 6px rgba(0, 188, 212, 0.8);
-    }
-    .offer-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: #007c91;
-    }
-    .offer-content {
-      flex-grow: 1;
-    }
-    .btn {
-      background-color: #00bcd4;
-      color: white !important;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      margin-top: 20px;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #0097a7;
-    }
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    body {background-color: #f7f7f7}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 18.0px 'Lucida Grande'; font-kerning: none}
+    span.s3 {font: 18.0px 'Apple Color Emoji'; font-kerning: none}
   </style>
 </head>
 <body>
-  <section id="jupiter-audit">
-    <h2>Jupiter CRM Audit</h2>
-    <h3>Professional CRM Data Quality Audits</h3>
-    <hr>
-
-    <div class="offers-container">
-      <div class="offer-card" onclick="window.open('https://jupiter-audit.streamlit.app/', '_blank')">
-        <div class="offer-title">🆓 JUPITER AUDIT - FREE DEMO</div>
-        <div class="offer-content">
-          <p><strong>Try it now - No commitment</strong></p>
-          <ul>
-            <li>✓ Analyze 100 records (contacts, companies, tickets)</li>
-            <li>✓ Instant health score /100</li>
-            <li>✓ 5-minute results</li>
-          </ul>
-          <p><strong>💰 FREE | ⏱️ 5 minutes | 🔓 No signup required</strong></p>
-        </div>
-        <a href="https://jupiter-audit.streamlit.app/" target="_blank" class="btn">TRY FREE DEMO →</a>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-title">⚡ EMERGENCY RECOVERY AUDIT</div>
-        <div class="offer-content">
-          <p><strong>Stop the bleeding in 72 hours</strong></p>
-          <p>Your CRM is costing you money RIGHT NOW. We identify and fix your 3 most critical issues in 72 hours.</p>
-          <p><strong>What you get:</strong></p>
-          <ul>
-            <li>✓ 15-point data quality analysis</li>
-            <li>✓ Your 3 major bottlenecks identified</li>
-            <li>✓ Financial impact quantified</li>
-            <li>✓ Correction scripts provided</li>
-          </ul>
-          <p><strong>Perfect for:</strong></p>
-          <ul>
-            <li>SMBs with urgent data quality issues</li>
-            <li>Marketing teams losing budget to bounces</li>
-            <li>Sales teams blocked by duplicates</li>
-            <li>Companies needing quick wins</li>
-          </ul>
-          <p><strong>💰 $1,497 USD | Delivery time: 72 hours | 📄 3-page report</strong></p>
-        </div>
-        <a href="#" class="btn">OPTIMIZE NOW →</a>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-title">🔬 DEEP ROOT ANALYSIS</div>
-        <div class="offer-content">
-          <p><strong>Understand WHY it's not working</strong></p>
-          <p>Your data is clean but results are disappointing. We analyze 6 months of history to find root causes and opportunities.</p>
-          <p><strong>What you get:</strong></p>
-          <ul>
-            <li>✓ 30-point deep analysis</li>
-            <li>• Data quality (15 points)</li>
-            <li>• Deal performance (5 points)</li>
-            <li>• Support/SLA (5 points)</li>
-            <li>• Agent performance (5 points)</li>
-            <li>✓ Root causes found</li>
-            <li>✓ Data-driven Solutions</li>
-            <li>✓ 6 months historical data examined</li>
-            <li>✓ Profit opportunities revealed</li>
-            <li>✓ 90-day transformation roadmap</li>
-            <li>✓ Industry benchmarks</li>
-            <li>✓ 30-day support</li>
-          </ul>
-          <p><strong>Perfect for:</strong></p>
-          <ul>
-            <li>Companies with clean data but poor results</li>
-            <li>Teams not understanding performance gaps</li>
-            <li>Managers seeking growth opportunities</li>
-            <li>Businesses ready to optimize</li>
-          </ul>
-          <p><strong>💰 $4,997 USD | ⏱️ 2 weeks | 📄 20-page report</strong></p>
-        </div>
-        <a href="#" class="btn">OPTIMIZE NOW →</a>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-title">🚀 COMPLETE TRANSFORMATION</div>
-        <div class="offer-content">
-          <p><strong>From chaos to performance - All in one</strong></p>
-          <p>Your CRM is a mess AND you don't understand why results are poor. We do both: cleanup + deep investigation.</p>
-          <p><strong>What you get:</strong></p>
-          <p><strong>PHASE 1 - Recovery (Week 1):</strong></p>
-          <ul>
-            <li>✓ Complete data cleanup</li>
-            <li>✓ 15-point quality audit</li>
-            <li>✓ Critical issues resolved</li>
-            <li>✓ Interim report</li>
-          </ul>
-          <p><strong>PHASE 2 - Deep Analysis (Weeks 2-3):</strong></p>
-          <ul>
-            <li>✓ Cleanup + Deep analysis</li>
-            <li>✓ Complete transformation</li>
-            <li>✓ Data-driven Solutions</li>
-            <li>✓ 6 months historical examination</li>
-            <li>✓ Root causes identified</li>
-            <li>✓ Opportunities mapped</li>
-            <li>✓ 90-day transformation roadmap</li>
-          </ul>
-          <p><strong>Combined deliverables:</strong></p>
-          <ul>
-            <li>✓ Multi-pages comprehensive report</li>
-            <li>✓ Before/after comparison</li>
-            <li>✓ Complete transformation plan</li>
-            <li>✓ ROI projections</li>
-            <li>✓ 30-day support</li>
-          </ul>
-          <p><strong>Perfect for:</strong></p>
-          <ul>
-            <li>Companies with both dirty data AND poor results</li>
-            <li>Businesses needing complete overhaul</li>
-            <li>Teams ready for total transformation</li>
-            <li>Organizations seeking maximum ROI</li>
-          </ul>
-          <p><strong>💰 $6,250 USD | ⏱️ 3 weeks</strong></p>
-        </div>
-        <a href="#" class="btn">TRANSFORM NOW →</a>
-      </div>
-    </div>
-  </section>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;html lang="en"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;head&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;JUPITER Audit - Professional Offers&lt;/title&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap');</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>* {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-sizing: border-box;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>body {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-family: 'Inter', 'Segoe UI', sans-serif;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #000000;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #FFFFFF;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.6;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 40px 20px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>min-height: 100vh;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>section#jupiter-audit {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 1400px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 auto;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>h2 {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 3rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 700;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #CD7F32;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 15px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-shadow: 0 0 30px rgba(205, 127, 50, 0.5);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>letter-spacing: 1px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>h3 {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 1.5rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 400;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 50px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>letter-spacing: 0.5px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>hr {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>height: 2px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, transparent, #CD7F32, transparent);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 40px 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 0 10px rgba(205, 127, 50, 0.5);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offers-container {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 30px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 40px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-card {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #FFFFFF;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 16px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 35px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 3px solid #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>0 0 20px rgba(0, 188, 212, 0.6),</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>0 0 40px rgba(0, 188, 212, 0.3),</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>inset 0 0 60px rgba(0, 188, 212, 0.05);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>flex-direction: column;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: space-between;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: pointer;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>position: relative;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>overflow: hidden;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-card::before {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>content: '';</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>position: absolute;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>top: -2px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>left: -2px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>right: -2px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>bottom: -2px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(45deg, #00BCD4, #CD7F32, #00BCD4);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 16px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>opacity: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>z-index: -1;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: opacity 0.4s ease;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-card:hover {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: translateY(-8px);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>0 0 40px rgba(0, 188, 212, 0.8),</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>0 0 60px rgba(0, 188, 212, 0.5),</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>0 10px 40px rgba(0, 0, 0, 0.3),</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>inset 0 0 80px rgba(0, 188, 212, 0.1);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-color: #00ACC1;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-card:hover::before {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>opacity: 0.15;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-title {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 1.6rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 700;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 20px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding-bottom: 15px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-bottom: 3px solid #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-transform: uppercase;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>letter-spacing: 0.5px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>flex-grow: 1;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #2A2A2A;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content p {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 15px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #1A1A1A;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content p strong {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 600;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content ul {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>list-style: none;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 15px 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding-left: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content ul li {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 8px 0 8px 25px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>position: relative;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #2A2A2A;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.6;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.offer-content ul li::before {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>content: '</b></span><span class="s2"><b>▹</b></span><span class="s1"><b>';</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>position: absolute;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>left: 0;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #00BCD4;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: bold;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 1.2em;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.btn {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white !important;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 15px 30px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 30px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 700;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-decoration: none;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 25px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>display: inline-block;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 2px solid transparent;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>text-transform: uppercase;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>letter-spacing: 1px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 0.95rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>.btn:hover {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #00ACC1 0%, #00BCD4 100%);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: scale(1.05);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 6px 25px rgba(0, 188, 212, 0.6);</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>border-color: #CD7F32;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>/* Responsive design */</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>h2 {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>font-size: 2rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b><span class="Apple-converted-space">      </span></b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>h3 {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>font-size: 1.2rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>.offers-container {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>grid-template-columns: 1fr;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>gap: 25px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>.offer-card {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>padding: 25px;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>.offer-title {</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>font-size: 1.3rem;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;/head&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;body&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="jupiter-audit"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;</b></span><span class="s3">🪐</span><span class="s1"><b> JUPITER CRM AUDIT&lt;/h2&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h3&gt;Professional CRM Data Quality Audits&lt;/h3&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;hr&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="offers-container"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="offer-card" onclick="window.open('https://jupiter-audit.streamlit.app/', '_blank')"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-title"&gt;</b></span><span class="s3">🆓</span><span class="s1"><b> JUPITER AUDIT - FREE DEMO&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-content"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Try it now - No commitment&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Analyze 100 records (contacts, companies, tickets)&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Instant health score /100&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;5-minute results&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;</b></span><span class="s3">💰</span><span class="s1"><b> FREE | </b></span><span class="s3">⏱️</span><span class="s1"><b> 5 minutes | </b></span><span class="s3">🔓</span><span class="s1"><b> No signup required&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="https://jupiter-audit.streamlit.app/" target="_blank" class="btn"&gt;TRY FREE DEMO </b></span><span class="s2"><b>→</b></span><span class="s1"><b>&lt;/a&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="offer-card"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-title"&gt;</b></span><span class="s3">⚡</span><span class="s1"><b> EMERGENCY RECOVERY AUDIT&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-content"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Stop the bleeding in 72 hours&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Your CRM is costing you money RIGHT NOW. We identify and fix your 3 most critical issues in 72 hours.&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;What you get:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;15-point data quality analysis&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Your 3 major bottlenecks identified&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Financial impact quantified&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Correction scripts provided&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Perfect for:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;SMBs with urgent data quality issues&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Marketing teams losing budget to bounces&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Sales teams blocked by duplicates&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Companies needing quick wins&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;</b></span><span class="s3">💰</span><span class="s1"><b> $1,497 USD | </b></span><span class="s3">⏱️</span><span class="s1"><b> 72 hours | </b></span><span class="s3">📄</span><span class="s1"><b> 3-page report&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="mailto:wbse.consult@gmail.com?subject=Emergency%20Recovery%20Audit%20-%20Request" class="btn"&gt;OPTIMIZE NOW </b></span><span class="s2"><b>→</b></span><span class="s1"><b>&lt;/a&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="offer-card"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-title"&gt;</b></span><span class="s3">🔬</span><span class="s1"><b> DEEP ROOT ANALYSIS&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-content"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Understand WHY it's not working&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Your data is clean but results are disappointing. We analyze 6 months of history to find root causes and opportunities.&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;What you get:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;30-point deep analysis&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Data quality (15 points)&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Deal performance (5 points)&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Support/SLA (5 points)&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Agent performance (5 points)&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Root causes found&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Data-driven Solutions&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;6 months historical data examined&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Profit opportunities revealed&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;90-day transformation roadmap&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Industry benchmarks&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;30-day support&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Perfect for:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Companies with clean data but poor results&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Teams not understanding performance gaps&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Managers seeking growth opportunities&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Businesses ready to optimize&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;</b></span><span class="s3">💰</span><span class="s1"><b> $4,997 USD | </b></span><span class="s3">⏱️</span><span class="s1"><b> 2 weeks | </b></span><span class="s3">📄</span><span class="s1"><b> 20-page report&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="mailto:wbse.consult@gmail.com?subject=Deep%20Root%20Analysis%20-%20Request" class="btn"&gt;OPTIMIZE NOW </b></span><span class="s2"><b>→</b></span><span class="s1"><b>&lt;/a&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45; min-height: 22.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="offer-card"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-title"&gt;</b></span><span class="s3">🚀</span><span class="s1"><b> COMPLETE TRANSFORMATION&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="offer-content"&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;From chaos to performance - All in one&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Your CRM is a mess AND you don't understand why results are poor. We do both: cleanup + deep investigation.&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;What you get:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;PHASE 1 - Recovery (Week 1):&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Complete data cleanup&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;15-point quality audit&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Critical issues resolved&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Interim report&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;PHASE 2 - Deep Analysis (Weeks 2-3):&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Cleanup + Deep analysis&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Complete transformation&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Data-driven Solutions&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;6 months historical examination&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Root causes identified&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Opportunities mapped&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;90-day transformation roadmap&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Combined deliverables:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Multi-pages comprehensive report&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Before/after comparison&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Complete transformation plan&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;ROI projections&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;30-day support&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Perfect for:&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Companies with both dirty data AND poor results&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Businesses needing complete overhaul&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Teams ready for total transformation&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">            </span>&lt;li&gt;Organizations seeking maximum ROI&lt;/li&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;/ul&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;</b></span><span class="s3">💰</span><span class="s1"><b> $6,250 USD | </b></span><span class="s3">⏱️</span><span class="s1"><b> 3 weeks&lt;/strong&gt;&lt;/p&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="mailto:wbse.consult@gmail.com?subject=Complete%20Transformation%20-%20Request" class="btn"&gt;TRANSFORM NOW </b></span><span class="s2"><b>→</b></span><span class="s1"><b>&lt;/a&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;/body&gt;</b></span></h2>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 28.8px; font: 18.0px Tahoma; color: #a07b45; -webkit-text-stroke: #a07b45"><span class="s1"><b>&lt;/html&gt;</b></span></h2>
 </body>
 </html>
