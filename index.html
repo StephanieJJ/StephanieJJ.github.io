@@ -15,8 +15,8 @@
 
         body {
             font-family: 'Caviar Dreams', 'Segoe UI', sans-serif;
-            background: #000000;
-            color: #FFFFFF;
+            background: #FFFFFF;
+            color: #1A1A1A;
             min-height: 100vh;
         }
 
@@ -25,13 +25,13 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(255,255,255,0.97);
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
             backdrop-filter: blur(10px);
         }
 
@@ -51,7 +51,7 @@
         }
 
         .nav-links a {
-            color: #FFFFFF;
+            color: #1A1A1A;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -168,17 +168,19 @@
         }
 
         .skill-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: #FFFFFF;
             padding: 30px;
             border-radius: 12px;
             min-width: 200px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 2px solid #CD7F32;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 12px rgba(205, 127, 50, 0.2);
         }
 
         .skill-card:hover {
-            background: rgba(0, 188, 212, 0.1);
-            border-color: #00BCD4;
+            background: rgba(0, 188, 212, 0.05);
+            border: 2px solid #00BCD4;
+            box-shadow: 0 6px 24px rgba(0, 188, 212, 0.3);
             transform: translateY(-5px);
         }
 
@@ -189,7 +191,7 @@
 
         .skill-title {
             font-size: 1.2em;
-            color: #FFFFFF;
+            color: #1A1A1A;
             font-weight: 600;
         }
 
@@ -197,7 +199,7 @@
         .about-section {
             min-height: 100vh;
             padding: 120px 20px;
-            background: #000000;
+            background: #FFFFFF;
         }
 
         .about-container {
@@ -222,7 +224,7 @@
         .about-intro p {
             font-size: 1.2em;
             line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(30, 30, 30, 0.9);
             margin-bottom: 20px;
         }
 
@@ -246,7 +248,7 @@
         }
 
         .about-card:hover {
-            background: rgba(205, 127, 50, 0.05);
+            background: rgba(205, 127, 50, 0.08);
             border-color: #CD7F32;
             transform: translateY(-5px);
         }
@@ -267,7 +269,7 @@
             padding-left: 25px;
             position: relative;
             line-height: 1.6;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(30, 30, 30, 0.85);
         }
 
         .about-card ul li::before {
@@ -293,13 +295,13 @@
             font-size: 1.15em;
             line-height: 1.7;
             margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(20, 20, 20, 0.9);
         }
 
         .bridge-statement {
             font-size: 1.1em;
             line-height: 1.8;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(30, 30, 30, 0.85);
         }
 
         /* Contact Section */
@@ -310,7 +312,7 @@
             align-items: center;
             justify-content: center;
             padding: 100px 20px;
-            background: linear-gradient(135deg, #0a0e27 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #f8f5f0 0%, #ede8e0 100%);
         }
 
         .contact-container {
@@ -327,7 +329,7 @@
 
         .contact-subtitle {
             font-size: 1.3em;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(30, 30, 30, 0.8);
             margin-bottom: 50px;
             line-height: 1.6;
         }
@@ -362,7 +364,7 @@
 
         .contact-method-title {
             font-size: 1.3em;
-            color: #FFFFFF;
+            color: #1A1A1A;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -455,11 +457,11 @@
         <h1 class="name">Stephanie Jupiter Jacca</h1>
         
         <h2 class="title">
-            AI-Driven CRM Specialist orchestrating AI assistants to build robust automation solutions while focusing on strategic analysis and business impact
+            CRM Data Specialist — I design solutions that solve real business problems.<br>Clean data → Reliable analytics → Better decisions.
         </h2>
         
         <p class="subtitle">
-            "Combining AI, Python, and API expertise to deliver production-ready CRM automation solutions"
+            Logistics · Transport · Hospitality · Medical · B2B — HubSpot Certified · AI-augmented workflow
         </p>
         
         <div class="cta-buttons">
@@ -469,18 +471,16 @@
         
         <div class="expertise-preview">
             <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-                <div class="skill-title">AI-Python Automation</div>
+                <div class="skill-title">Cleaning</div>
             </div>
-            
             <div class="skill-card">
-                <div class="skill-icon">📊</div>
-                <div class="skill-title">Data Quality</div>
+                <div class="skill-title">KPI's — Performance</div>
             </div>
-            
             <div class="skill-card">
-                <div class="skill-icon">🔗</div>
-                <div class="skill-title">API Integration</div>
+                <div class="skill-title">Churn Prevention</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-title">Dashboards</div>
             </div>
         </div>
     </section>
@@ -491,47 +491,43 @@
             
             <div class="about-intro">
                 <p>
-                    I'm a French AI-Driven CRM Specialist, self-taught in data and originally trained in logistics and airport operations. 
-                    My work is built on one conviction: <strong>clean data is gold</strong>. It helps you understand the past, navigate the present, and predict the future.
+                    Trained in transport and logistics in Paris — air, rail, and road freight — I was confronted early with a universal field reality: CRMs mishandled by everyone, bypassed by parallel tools, no longer trusted by the teams that depend on them. That reality is what led me here.
                 </p>
                 <p>
-                    Specialized in <strong>data quality, API safety, and CRM automation</strong>, I turn complex environments into reliable, scalable, and decision-ready systems.
+                    I design solutions that address real business problems — the ones that cause money loss, client attrition, and wasted time. I do not code. I analyze, architect, and orchestrate AI assistants to build custom tools.
                 </p>
             </div>
 
             <div class="about-grid">
                 <div class="about-card">
-                    <h3>🔧 What I Actually Do</h3>
+                    <h3>What I Actually Do</h3>
                     <ul>
-                        <li>AI-powered CRM audits</li>
-                        <li>Automated script generation (API tests, validations, logical checks)</li>
-                        <li>Python automation pipelines (data cleaning, validation, transformation)</li>
-                        <li>Design and optimization of CRM workflows (HubSpot — Service Hub certified)</li>
-                        <li>Creation of clear, decision-ready dashboards</li>
-                        <li>Transforming raw data into simple, meaningful visuals for non-technical audiences</li>
-                        <li>Advanced analysis in Jupyter (pandas, numpy)</li>
-                        <li>Clear, precise communication in French and English</li>
+                        <li>Identify CRM inefficiencies and track data weak points</li>
+                        <li>Design data quality solutions adapted to the business context</li>
+                        <li>Transform raw data into clear, actionable insights</li>
+                        <li>Implement automations where needed</li>
+                        <li>Produce documentation that supports decision-making</li>
+                        <li>Maintain long-term CRM reliability</li>
                     </ul>
                 </div>
 
                 <div class="about-card">
-                    <h3>🤖 My Method</h3>
-                    <p class="method-title">AI as a co-pilot, human judgment as the safeguard</p>
+                    <h3>My Method</h3>
+                    <p class="method-title">Research · Reflection · Strategy → Architecture → AI Orchestration → Deployed Solutions</p>
                     <p>
-                        I don't write complex algorithms from scratch. I design, orchestrate, and validate.
+                        Every decision stays readable, controllable, and validated by a human.
                     </p>
                     <ul>
-                        <li><strong>AI generates the scripts</strong> (API testing logic, validation routines, audits)</li>
-                        <li><strong>I verify, analyze, and interpret</strong> the results</li>
-                        <li><strong>Then I turn everything into business-focused recommendations</strong> for retention, activation, and operational efficiency</li>
+                        <li><strong>I analyze</strong> the business problem and identify root causes</li>
+                        <li><strong>I design the architecture</strong> and define the solution</li>
+                        <li><strong>I orchestrate AI assistants</strong> to build and validate the tools</li>
                     </ul>
                 </div>
 
                 <div class="about-card">
-                    <h3>💎 My Value</h3>
+                    <h3>My Value</h3>
                     <p class="value-statement">
-                        <strong>Hiring me is hiring a team.</strong> One person — amplified by multiple AI assistants. 
-                        The result: high execution speed, strong quality control, and full autonomy.
+                        I bridge the gap between business needs and technical execution. One person — amplified by AI assistants. High execution speed, strong quality control, full autonomy.
                     </p>
                     <p class="bridge-statement">
                         I bridge the gap between:<br>
@@ -541,13 +537,13 @@
                 </div>
 
                 <div class="about-card">
-                    <h3>🎯 What I Deliver</h3>
+                    <h3>What I Deliver</h3>
                     <ul class="deliverables">
-                        <li>✅ Reliable, clean, actionable data</li>
-                        <li>✅ Safe, controlled API integrations</li>
+                        <li>✅ Clean, reliable, actionable data</li>
                         <li>✅ Dashboards that truly support decision-making</li>
-                        <li>✅ A CRM that boosts retention and customer experience</li>
-                        <li>✅ Clear, structured communication (FR / EN)</li>
+                        <li>✅ A CRM that becomes the decision center of the business</li>
+                        <li>✅ Churn prevention and root cause analysis</li>
+                        <li>✅ Clear documentation and structured communication (FR / EN)</li>
                     </ul>
                 </div>
             </div>
@@ -556,34 +552,34 @@
 
     <section id="contact" class="contact-section">
 
-    <section id="jupiter-apps" class="about-section" style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);">
+    <section id="jupiter-apps" class="about-section" style="background: #f0f4f8;">
         <div style="max-width: 1200px; margin: 0 auto; padding: 80px 40px;">
             <h2 class="about-title" style="text-align: center; background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🪐 Jupiter Apps</h2>
             
-            <p style="text-align: center; font-size: 1.3em; margin: 30px auto 60px; max-width: 800px; color: rgba(255,255,255,0.9);">
-                Enterprise-grade CRM intelligence platform suite
+            <p style="text-align: center; font-size: 1.3em; margin: 30px auto 60px; max-width: 800px; color: rgba(20,20,20,0.9);">
+                A CRM toolset in active development — built to solve the data integrity problems I observed directly in the field.
             </p>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                 <div style="background: rgba(0,206,209,0.1); padding: 40px; border-radius: 16px; border: 2px solid rgba(0,206,209,0.3); transition: all 0.3s;">
                     <div style="font-size: 3em; margin-bottom: 20px;">🔍</div>
                     <h3 style="color: #00CED1; margin-bottom: 15px;">JUPITER Audit</h3>
-                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">60+ data points analysis. Quality scoring, duplicate detection, performance tracking.</p>
+                    <p style="color: rgba(30,30,30,0.8); line-height: 1.6;">60+ data points analysis. Quality scoring, duplicate detection, performance tracking.</p>
                     <a href="/projects/jupiter-audit.html" style="display: inline-block; margin-top: 20px; padding: 10px 25px; background: linear-gradient(135deg, #00CED1 0%, #CD7F32 100%); color: white; text-decoration: none; border-radius: 25px;">View Details</a>
-                    <a href="https://jupiter-audit-demo.streamlit.app" target="_blank" style="display: inline-block; margin-top: 20px; margin-left: 10px; padding: 10px 25px; border: 2px solid #00CED1; color: #00CED1; text-decoration: none; border-radius: 25px;">Try Demo</a>
+                    <a href="https://jupiter-audit.streamlit.app/" target="_blank" style="display: inline-block; margin-top: 20px; margin-left: 10px; padding: 10px 25px; border: 2px solid #00CED1; color: #00CED1; text-decoration: none; border-radius: 25px;">Try Demo</a>
                 </div>
                 
                 <div style="background: rgba(205,127,50,0.1); padding: 40px; border-radius: 16px; border: 2px solid rgba(205,127,50,0.3);">
                     <div style="font-size: 3em; margin-bottom: 20px;">📉</div>
                     <h3 style="color: #CD7F32; margin-bottom: 15px;">JUPITER Churn</h3>
-                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">AI-powered churn prediction. Risk scoring and retention recommendations.</p>
+                    <p style="color: rgba(30,30,30,0.8); line-height: 1.6;">AI-powered churn prediction. Risk scoring and retention recommendations.</p>
                     <span style="display: inline-block; margin-top: 20px; padding: 10px 25px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); border-radius: 25px;">Coming Soon</span>
                 </div>
                 
                 <div style="background: rgba(0,206,209,0.1); padding: 40px; border-radius: 16px; border: 2px solid rgba(0,206,209,0.3);">
                     <div style="font-size: 3em; margin-bottom: 20px;">💡</div>
                     <h3 style="color: #00CED1; margin-bottom: 15px;">JUPITER Insights</h3>
-                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Automated reporting with AI-generated insights and recommendations.</p>
+                    <p style="color: rgba(30,30,30,0.8); line-height: 1.6;">Automated reporting with AI-generated insights and recommendations.</p>
                     <span style="display: inline-block; margin-top: 20px; padding: 10px 25px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); border-radius: 25px;">In Development</span>
                 </div>
             </div>
@@ -596,14 +592,14 @@
         <div class="contact-container">
             <h2 class="contact-title">Let's Work Together</h2>
             <p class="contact-subtitle">
-                Ready to optimize your CRM with AI-driven automation? Get in touch to discuss your project.
+                Looking for a CRM Data Specialist who understands your sector and delivers concrete solutions? Let's talk.
             </p>
             
             <div class="contact-methods">
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3 class="contact-method-title">Email</h3>
-                    <a href="mailto:wbse.consult@gmail.com" class="contact-link">wbse.consult@gmail.com</a>
+                    <a href="/cdn-cgi/l/email-protection#780f1a0b1d561b17160b0d140c381f15191114561b1715" class="contact-link"><span class="__cf_email__" data-cfemail="1f687d6c7a317c70716c6a736b5f78727e7673317c7072">[email&#160;protected]</span></a>
                 </div>
                 
                 <div class="contact-card">
@@ -619,8 +615,4 @@
                 </div>
             </div>
             
-            <a href="mailto:wbse.consult@gmail.com" class="email-button">📧 Send Me an Email</a>
-        </div>
-    </section>
-</body>
-</html>
+    
